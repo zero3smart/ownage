@@ -1,0 +1,13 @@
+@import "../base/mixin";
+
+.navbar {
+  background: $white-bg;
+}
+
+.vertical-separator {
+  width: 1px;
+  background: #ccc;
+  border-width: 5px 0;
+  border-style: solid;
+  border-color: #fff;
+}

@@ -1,0 +1,10 @@
+@import "../base/mixin";
+
+body {
+  background: $white-bg;
+}
+
+.main-container {
+  width: $page-width;
+  margin: 0 auto;
+}

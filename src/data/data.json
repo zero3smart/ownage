@@ -1,0 +1,320 @@
+{
+   "markets":[
+      {
+         "id":1,
+         "slug":"genetic-testing-for-hereditary-conditions",
+         "title":"Genetic testing for hereditary conditions",
+         "description":"Lab testing focused on inherited conditions. Does not include genetic testing that targets diagnosing diseases.",
+         "createdAt":"2017-08-27T00:18:43.314Z",
+         "updatedAt":"2017-08-27T00:18:43.314Z",
+         "imageSrc":"https://s3.amazonaws.com/public-static-website/market-placeholder-image.png",
+         "url":"https://mkt-stag.herokuapp.com/api/markets/genetic-testing-for-hereditary-conditions.json",
+         "featuredStats":{
+            "companies":43,
+            "comments":86,
+            "contributors":44
+         },
+         "featuredCompanies":[
+            {
+               "name":"WeGene",
+               "imageSrc":"https://logo.clearbit.com/wegene.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/wegene.json"
+            },
+            {
+               "name":"TestDiagnostics",
+               "imageSrc":"https://logo.clearbit.com/testdiagnostics.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/testdiagnostics.json"
+            },
+            {
+               "name":"Inherent Health",
+               "imageSrc":"https://logo.clearbit.com/inherenthealth.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/inherent-health.json"
+            },
+            {
+               "name":"Sure Genomics",
+               "imageSrc":"https://logo.clearbit.com/suregenomics.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/sure-genomics.json"
+            },
+            {
+               "name":"Genomics Law Report",
+               "imageSrc":"https://logo.clearbit.com/genomicslawreport.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/genomics-law-report.json"
+            }
+         ],
+         "featuredContributors":[
+            {
+               "id":1,
+               "username":"dexter",
+               "name":"Lavinia Abshire",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/dexter.json"
+            },
+            {
+               "id":2,
+               "username":"yazmin_roberts",
+               "name":"Isom Dibbert",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/yazmin_roberts.json"
+            },
+            {
+               "id":3,
+               "username":"paul",
+               "name":"Andy Lindgren",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/paul.json"
+            },
+            {
+               "id":4,
+               "username":"ryder",
+               "name":"Selmer Bartell",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/ryder.json"
+            },
+            {
+               "id":5,
+               "username":"frederic_cain",
+               "name":"Ken Emmerich",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/frederic_cain.json"
+            }
+         ]
+      },
+      {
+         "id":2,
+         "slug":"top-artificial-intelligence-companies-in-healthcare-to-keep-an-eye-on",
+         "title":"Top Artificial Intelligence Companies in Healthcare to Keep an Eye On",
+         "description":"Artificial Intelligence has to and will redesign healthcare. Concerning healthcare, artificial intelligence will redesign it completely – and for the better. AI could help medical professionals in designing treatment plans and finding the best suited methods for every patient. It might assist repetitive, monotonous jobs, so physicians and nurses can concentrate on their actual jobs instead of e.g. fighting with the tread-wheel of bureaucracy.",
+         "createdAt":"2017-08-27T01:00:44.365Z",
+         "updatedAt":"2017-08-27T01:00:44.365Z",
+         "imageSrc":"https://s3.amazonaws.com/public-static-website/market-placeholder-image.png",
+         "url":"https://mkt-stag.herokuapp.com/api/markets/top-artificial-intelligence-companies-in-healthcare-to-keep-an-eye-on.json",
+         "featuredStats":{
+            "companies":30,
+            "comments":33,
+            "contributors":10
+         },
+         "featuredCompanies":[
+            {
+               "name":"Devicix",
+               "imageSrc":"https://logo.clearbit.com/devicix.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/devicix.json"
+            },
+            {
+               "name":"SigOpt",
+               "imageSrc":"https://logo.clearbit.com/sigopt.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/sigopt.json"
+            },
+            {
+               "name":"TuringSense",
+               "imageSrc":"https://logo.clearbit.com/turingsense.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/turingsense.json"
+            },
+            {
+               "name":"Immusoft",
+               "imageSrc":"https://logo.clearbit.com/immusoft.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/immusoft.json"
+            },
+            {
+               "name":"Perimeter Medical Imaging",
+               "imageSrc":"https://logo.clearbit.com/perimetermed.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/perimeter-medical-imaging.json"
+            }
+         ],
+         "featuredContributors":[
+            {
+               "id":1,
+               "username":"dexter",
+               "name":"Lavinia Abshire",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/dexter.json"
+            },
+            {
+               "id":2,
+               "username":"yazmin_roberts",
+               "name":"Isom Dibbert",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/yazmin_roberts.json"
+            },
+            {
+               "id":3,
+               "username":"paul",
+               "name":"Andy Lindgren",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/paul.json"
+            },
+            {
+               "id":4,
+               "username":"ryder",
+               "name":"Selmer Bartell",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/ryder.json"
+            },
+            {
+               "id":5,
+               "username":"frederic_cain",
+               "name":"Ken Emmerich",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/frederic_cain.json"
+            }
+         ]
+      },
+      {
+         "id":3,
+         "slug":"20-machine-learning-and-ai-startups-in-india-running-the-ai-race-2017-make-me-analyst",
+         "title":"20 Machine Learning and AI Startups in India Running the AI Race- 2017 - MAKE ME ANALYST",
+         "description":" AI is the future. AI is science fiction and it is already part of our everyday lives. Suddenly AI is everywhere. Big players like Google, Facebook, Deepmind, Apple, Microsoft, Baidu, Amazon …",
+         "createdAt":"2017-08-27T19:50:41.798Z",
+         "updatedAt":"2017-08-27T19:50:41.798Z",
+         "imageSrc":"https://s3.amazonaws.com/public-static-website/market-placeholder-image.png",
+         "url":"https://mkt-stag.herokuapp.com/api/markets/20-machine-learning-and-ai-startups-in-india-running-the-ai-race-2017-make-me-analyst.json",
+         "featuredStats":{
+            "companies":21,
+            "comments":13,
+            "contributors":16
+         },
+         "featuredCompanies":[
+            {
+               "name":"My Ally",
+               "imageSrc":"https://logo.clearbit.com/myally.ai",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/my-ally.json"
+            },
+            {
+               "name":"Locus",
+               "imageSrc":"https://logo.clearbit.com/locus.sh",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/locus.json"
+            },
+            {
+               "name":"Zenatix",
+               "imageSrc":"https://logo.clearbit.com/zenatix.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/zenatix.json"
+            },
+            {
+               "name":"SigTuple",
+               "imageSrc":"https://logo.clearbit.com/sigtuple.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/sigtuple.json"
+            },
+            {
+               "name":"Tricog Health",
+               "imageSrc":"https://logo.clearbit.com/tricog.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/tricog-health.json"
+            }
+         ],
+         "featuredContributors":[
+            {
+               "id":1,
+               "username":"dexter",
+               "name":"Lavinia Abshire",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/dexter.json"
+            },
+            {
+               "id":2,
+               "username":"yazmin_roberts",
+               "name":"Isom Dibbert",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/yazmin_roberts.json"
+            },
+            {
+               "id":3,
+               "username":"paul",
+               "name":"Andy Lindgren",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/paul.json"
+            },
+            {
+               "id":4,
+               "username":"ryder",
+               "name":"Selmer Bartell",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/ryder.json"
+            },
+            {
+               "id":5,
+               "username":"frederic_cain",
+               "name":"Ken Emmerich",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/frederic_cain.json"
+            }
+         ]
+      },
+      {
+         "id":4,
+         "slug":"clojure-companies",
+         "title":"Companies using Closure",
+         "description":"Below is a partial list of some companies using Clojure or ClojureScript. Most of this information comes from direct contacts, presentations, or other online resources. If you would like to be added or removed from this list, please contact alex.miller@cognitect.com.",
+         "createdAt":"2017-08-29T17:44:45.434Z",
+         "updatedAt":"2017-08-30T03:06:50.778Z",
+         "imageSrc":"https://s3.amazonaws.com/public-static-website/market-placeholder-image.png",
+         "url":"https://mkt-stag.herokuapp.com/api/markets/clojure-companies.json",
+         "featuredStats":{
+            "companies":157,
+            "comments":24,
+            "contributors":5
+         },
+         "featuredCompanies":[
+            {
+               "name":"Liveops",
+               "imageSrc":"https://logo.clearbit.com/liveops.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/liveops.json"
+            },
+            {
+               "name":"LivingSocial",
+               "imageSrc":"https://logo.clearbit.com/livingsocial.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/livingsocial.json"
+            },
+            {
+               "name":"Logic Soft Pvt",
+               "imageSrc":"https://logo.clearbit.com/logicsoft.co.in",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/logic-soft-pvt.json"
+            },
+            {
+               "name":"LonoCloud",
+               "imageSrc":"https://logo.clearbit.com/lonocloud.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/lonocloud.json"
+            },
+            {
+               "name":"ViaSat",
+               "imageSrc":"https://logo.clearbit.com/viasat.com",
+               "url":"https://mkt-stag.herokuapp.com/api/companies/viasat.json"
+            }
+         ],
+         "featuredContributors":[
+            {
+               "id":1,
+               "username":"dexter",
+               "name":"Lavinia Abshire",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/dexter.json"
+            },
+            {
+               "id":2,
+               "username":"yazmin_roberts",
+               "name":"Isom Dibbert",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/yazmin_roberts.json"
+            },
+            {
+               "id":3,
+               "username":"paul",
+               "name":"Andy Lindgren",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/paul.json"
+            },
+            {
+               "id":4,
+               "username":"ryder",
+               "name":"Selmer Bartell",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/ryder.json"
+            },
+            {
+               "id":5,
+               "username":"frederic_cain",
+               "name":"Ken Emmerich",
+               "imageSrc":"https://s3.amazonaws.com/public-static-website/user-profile-placeholder.png",
+               "url":"https://mkt-stag.herokuapp.com/api/users/frederic_cain.json"
+            }
+         ]
+      }
+   ]
+}
