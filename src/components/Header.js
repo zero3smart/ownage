@@ -5,7 +5,7 @@ import NavigationBar from './NavigationBar';
 class Header extends React.Component {
   render() {
     return (
-      <div className = "header-container">
+      <div className='header-container'>
         <NavigationBar />
       </div>
     );

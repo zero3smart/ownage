@@ -1,13 +1,58 @@
 @import "../base/mixin";
 
+.header-nav {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-links .nav-item {
+  margin-right: 30px;
+}
+
 .navbar {
   background: $white-bg;
 }
 
 .vertical-separator {
   width: 1px;
-  background: #ccc;
-  border-width: 5px 0;
+  background: #eee;
+  border-width: 6px 0;
   border-style: solid;
   border-color: #fff;
+}
+
+.header-anchor {
+  color: #2fdbd9 !important;
+  text-decoration: none;
+  padding-top: 8px;
+}
+
+.header-anchor:hover,
+.header-anchor:active,
+.header-anchor:link {
+  color: #ffa500 !important;
+  text-decoration: none;
+}
+
+.header-cart {
+  background: #2fdbd9 !important;
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  li:nth-child(1) {
+    margin-top: 6px;
+    margin-left: 5px;
+  }
+
+  .dropdown-menu {
+    right: 0 !important;
+    left: initial !important;
+    background: #2fdbd9;
+
+    a {
+      color: #fff;
+      background: #2fdbd9;
+    }
+  }
 }

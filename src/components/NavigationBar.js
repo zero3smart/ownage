@@ -1,18 +1,18 @@
 import React from 'react';
 import '../assets/stylesheets/components/NavigationBar.scss';
-import avatar from '../assets/images/character.png';
 import headerLogo from '../assets/images/header_logo.png';
 import headerLogoDesc from '../assets/images/header_logo_desc.png';
 import headerApple from '../assets/images/header_apple.png';
 import headerPlay from '../assets/images/header_play.png';
+import headerCart from '../assets/images/header_cart.png';
 
 import { IndexLink } from 'react-router';
 
 class NavigationBar extends React.Component {
   render() {
     return (
-      <div className=''>
-        <nav className='navbar navbar-toggleable-md navbar-light bg-faded'>
+      <div>
+        <nav className='navbar navbar-toggleable-md navbar-light bg-faded header-nav'>
           <button
             className='navbar-toggler navbar-toggler-right'
             type='button'
@@ -30,10 +30,25 @@ class NavigationBar extends React.Component {
           </IndexLink>
 
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav mr-auto'>
+            <ul className='navbar-nav mr-auto' />
+            <a href='#' className='navbar-text ml-4'>
+              <img src={headerApple} alt='Header Apple' />
+            </a>
+            <a href='#' className='navbar-text ml-4'>
+              <img src={headerPlay} alt='Header Play' />
+            </a>
+            <div className='vertical-separator ml-4' />
+            <a href='#' className='navbar-text ml-4 header-anchor'>
+              Log In
+            </a>
+            <div className='vertical-separator ml-4' />
+            <a href='#' className='navbar-text ml-4 header-anchor'>
+              Sign Up
+            </a>
+            <ul className='nav navbar-nav header-cart ml-4'>
               <li>
                 <a href='#' className='Bitmap'>
-                  <img src={avatar} alt='avatar' />
+                  <img src={headerCart} alt='Header Cart' width='15' />
                 </a>
               </li>
               <li className='nav-item dropdown'>
@@ -44,7 +59,7 @@ class NavigationBar extends React.Component {
                   data-toggle='dropdown'
                   aria-haspopup='true'
                   aria-expanded='false'>
-                  Hi, <b>Alexandra</b>
+                  Cart
                 </a>
                 <div className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
                   <a className='dropdown-item' href='#'>Action</a>
@@ -53,16 +68,9 @@ class NavigationBar extends React.Component {
                 </div>
               </li>
             </ul>
-            <a href='#' className='navbar-text ml-4'>
-              <img src={headerApple} alt='Header Apple' />
-            </a>
-            <a href='#' className='navbar-text ml-4'>
-              <img src={headerPlay} alt='Header Play' />
-            </a>
-            <div className='vertical-separator ml-4' />
           </div>
         </nav>
-        <nav className='navbar navbar-toggleable-md navbar-light bg-faded'>
+        <nav className='navbar navbar-toggleable-md navbar-light bg-faded nav-links'>
           <button
             className='navbar-toggler navbar-toggler-right'
             type='button'
@@ -74,51 +82,38 @@ class NavigationBar extends React.Component {
             <span className='navbar-toggler-icon' />
           </button>
 
-          <IndexLink to='/' activeClassName='active' className='navbar-brand'>
-            <img src={headerLogo} alt='Header Logo' />
-          </IndexLink>
-
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item'>
-                <IndexLink to='/explore' activeClassName='active' className='nav-link'>
-                  <span className='separator'>Explorer</span> <span className='sr-only'>(current)</span>
+                <IndexLink to='/prank-all-videos' activeClassName='active' className='nav-link'>
+                  <span className='separator'>PRANK CALL VIDEOS</span>
                 </IndexLink>
               </li>
               <li className='nav-item'>
-                <IndexLink to='/about' activeClassName='active' className='nav-link'>
-                  <span className='separator'>About</span>
+                <IndexLink to='/request-prank' activeClassName='active' className='nav-link'>
+                  <span className='separator'>REQUEST A PRANK</span>
                 </IndexLink>
               </li>
               <li className='nav-item'>
-                <IndexLink to='/help' activeClassName='active' className='nav-link'>
-                  <span className='separator'>How does this work</span>
+                <IndexLink to='/store' activeClassName='active' className='nav-link'>
+                  <span className='separator'>STORE</span>
+                </IndexLink>
+              </li>
+              <li className='nav-item'>
+                <IndexLink to='/apps' activeClassName='active' className='nav-link'>
+                  <span className='separator'>APPS</span>
+                </IndexLink>
+              </li>
+              <li className='nav-item'>
+                <IndexLink to='/blog' activeClassName='active' className='nav-link'>
+                  <span className='separator'>BLOG</span>
                 </IndexLink>
               </li>
             </ul>
-            <ul className='nav navbar-nav'>
-              <li className='nav-item dropdown'>
-                <a
-                  className='nav-link dropdown-toggle'
-                  href='http://example.com'
-                  id='navbarDropdownMenuLink'
-                  data-toggle='dropdown'
-                  aria-haspopup='true'
-                  aria-expanded='false'>
-                  Hi, <b>Alexandra</b>
-                </a>
-                <div className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                  <a className='dropdown-item' href='#'>Action</a>
-                  <a className='dropdown-item' href='#'>Another action</a>
-                  <a className='dropdown-item' href='#'>Something else here</a>
-                </div>
-              </li>
-              <li>
-                <a href='#' className='Bitmap'>
-                  <img src={avatar} alt='avatar' />
-                </a>
-              </li>
-            </ul>
+            <form className='form-inline my-2 my-lg-0'>
+              <input className='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
+              <button className='btn btn-outline-success my-2 my-sm-0' type='submit'>Search</button>
+            </form>
           </div>
         </nav>
       </div>

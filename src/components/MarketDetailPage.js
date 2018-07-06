@@ -2,7 +2,6 @@ import React from 'react';
 import { IndexLink } from 'react-router';
 import { connect } from 'react-redux';
 import CompanyCard from './CompanyCard';
-import bluebird from 'bluebird';
 import classnames from 'classnames';
 import { fetchCompanies, fetchMarkets } from '../actions/marketsActions';
 
