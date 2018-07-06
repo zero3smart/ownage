@@ -110,10 +110,6 @@ class NavigationBar extends React.Component {
                                 </IndexLink>
                             </li>
                         </ul>
-                        {/*<form className='form-inline my-2 my-lg-0'>*/}
-                            {/*<input className='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />*/}
-                            {/*<button className='btn btn-outline-success my-2 my-sm-0' type='submit'>Search</button>*/}
-                        {/*</form>*/}
                         <div className='has-search'>
                             <span className='fa fa-search form-control-feedback'></span>
                             <input type='text' className='form-control' placeholder='Search' />
