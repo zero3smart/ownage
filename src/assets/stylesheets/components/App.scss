@@ -1,10 +1,14 @@
 @import "../base/mixin";
 
 body {
-  background: $white-bg;
+    background: $white-bg;
+    color: #282828;}
+
+h1 {
+    color: #282828;
 }
 
 .main-container {
-  width: $page-width;
-  margin: 0 auto;
+    width: $page-width;
+    margin: 0 auto;
 }

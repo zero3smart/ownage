@@ -1,3 +1,25 @@
 .home-container {
+    #banner2 {
+        position: relative;
+        padding: 75px 0;
+        border-bottom: 1px solid #e5e5e5;
 
+        a#apple-store-btn {
+            position: absolute;
+            left: 585px;
+            top: 284px;
+        }
+
+        a#google-play-btn {
+            position: absolute;
+            left: 872px;
+            top: 284px;
+        }
+    }
+
+    h1 {
+        font-size: 57.333333333333336px;
+        text-align: center;
+        font-weight: bold;
+    }
 }
