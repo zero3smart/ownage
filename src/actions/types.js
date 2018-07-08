@@ -1,3 +1,1 @@
-export const SET_MARKETS = 'SET_MARKETS';
-export const SET_COMPANIES = 'SET_COMPANIES';
-export const SET_STATES = 'SET_STATES';
+export const SET_VIDEOS = 'SET_VIDEOS';

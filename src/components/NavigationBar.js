@@ -12,13 +12,13 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div>
-                <nav className='navbar navbar-toggleable-md navbar-light bg-faded header-nav'>
+                <nav className='navbar navbar-expand-md navbar-light bg-light header-nav'>
                     <button
                         className='navbar-toggler navbar-toggler-right'
                         type='button'
                         data-toggle='collapse'
-                        data-target='#navbarSupportedContent'
-                        aria-controls='navbarSupportedContent'
+                        data-target='#nav1'
+                        aria-controls='nav1'
                         aria-expanded='false'
                         aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon' />
@@ -29,7 +29,7 @@ class NavigationBar extends React.Component {
                         <img src={headerLogoDesc} alt='Header Logo Desc' />
                     </IndexLink>
 
-                    <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+                    <div className='collapse navbar-collapse' id='nav1'>
                         <ul className='navbar-nav mr-auto' />
                         <a href='#' className='navbar-text ml-4'>
                             <img src={headerApple} alt='Header Apple' />
@@ -70,19 +70,19 @@ class NavigationBar extends React.Component {
                         </ul>
                     </div>
                 </nav>
-                <nav className='navbar navbar-toggleable-md navbar-light bg-faded nav-links'>
+                <nav className='navbar navbar-expand-md navbar-light bg-light nav-links'>
                     <button
                         className='navbar-toggler navbar-toggler-right'
                         type='button'
                         data-toggle='collapse'
-                        data-target='#navbarSupportedContent'
-                        aria-controls='navbarSupportedContent'
+                        data-target='#nav2'
+                        aria-controls='nav2'
                         aria-expanded='false'
                         aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon' />
                     </button>
 
-                    <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+                    <div className='collapse navbar-collapse' id='nav2'>
                         <ul className='navbar-nav mr-auto'>
                             <li className='nav-item'>
                                 <IndexLink to='/prank-all-videos' activeClassName='active' className='nav-link'>
