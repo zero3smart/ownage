@@ -17,8 +17,12 @@ class LatestVideo extends React.Component {
     }
 
     render() {
-        const videoList = videos.videos.map(video => (
-            <div className='card' key={video.id}>
+        const style = {
+            marginRight: 0
+        };
+
+        const videoList = videos.videos.map((video, index) => (
+            <div className='card' key={video.id} style={(index+1) % 3 == 0 ? style : {}}>
                 <img className='card-img-top' src={video.imageSrc} alt='Video' />
                 <div className='card-body'>
                     <h5 className='card-title'>{video.title}</h5>
@@ -37,7 +41,7 @@ class LatestVideo extends React.Component {
 
         return (
             <div className='latest-video-container'>
-                <div className='card-deck'>
+                <div className=''>
                     {videoList}
                 </div>
             </div>
