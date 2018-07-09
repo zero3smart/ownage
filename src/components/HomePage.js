@@ -1,4 +1,5 @@
 import React from 'react';
+import LatestVideo from './LatestVideo';
 import '../assets/stylesheets/components/HomePage.scss';
 import headerBanner1 from '../assets/images/header_banner.png';
 import headerBanner2 from '../assets/images/header_banner2.png';
@@ -27,6 +28,7 @@ class HomePage extends React.Component {
                 </div>
                 <div id='latest-video'>
                     <h1>Latest Videos</h1>
+                    <LatestVideo />
                 </div>
             </div>
         );

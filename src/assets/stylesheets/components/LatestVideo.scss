@@ -1,0 +1,39 @@
+.latest-video-container {
+    .card-title {
+        color: #282828;
+        font-size: 30.666666666666668px;
+    }
+
+    .card-text.date {
+        border-right: 1px solid #e5e5e5;
+        padding-right: 19px;
+        display: inline-block;
+
+        img {
+            margin-top: -9px;
+            margin-right: 5px;
+        }
+
+        .text-muted {
+            font-size: 20px;
+            color: #2fdbd9 !important;
+        }
+    }
+
+    .card-text.views {
+        display: inline-block;
+        padding-left: 18px;
+        color: #636363;
+        font-size: 20px;
+
+        img {
+            margin-top: -5px;
+        }
+    }
+
+    .card-text.description {
+        font-size: 21.333333333333332px;
+        color: #636363;
+    }
+
+}

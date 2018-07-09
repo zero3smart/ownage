@@ -1,4 +1,4 @@
-{
+export const videos = {
     "videos": [
         {
             "id": 1,
@@ -15,7 +15,7 @@
             "date": "1 week ago",
             "imageSrc": "images/video2.png",
             "videoSrc": "http://youtube.com/OwnagePranks",
-            "views": "387",
+            "views": "387K",
             "description": "I called this Uber driver as Tyrone, acting like a previous passenger that has..."
         },
         {
@@ -28,4 +28,4 @@
             "description": "This guy in the UK had his car stolen, he absolutely LOSES IT when the thief calls..."
         }
     ]
-}
+};

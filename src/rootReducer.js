@@ -1,10 +1,6 @@
 import { combineReducers } from 'redux';
-import markets from './reducers/markets';
-import companies from './reducers/companies';
-import states from './reducers/states';
+import videos from './reducers/videos';
 
 export default combineReducers({
-  markets,
-  companies,
-  states
+    videos
 });
