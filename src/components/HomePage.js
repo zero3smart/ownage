@@ -23,7 +23,7 @@ class HomePage extends React.Component {
                     </a>
                 </div>
                 <div id='latest-video'>
-                    <h1>Latest Videos</h1>
+                    <h2>Latest Videos</h2>
                     <LatestVideo />
                 </div>
             </div>

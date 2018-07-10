@@ -25,8 +25,10 @@ class NavigationBar extends React.Component {
                     </button>
 
                     <IndexLink to='/' activeClassName='active' className='navbar-brand'>
-                        <img src={headerLogo} alt='Header Logo' />
-                        <img src={headerLogoDesc} alt='Header Logo Desc' />
+                        <h1>
+                            <img src={headerLogo} alt='Header Logo' />
+                            <img src={headerLogoDesc} alt='Header Logo Desc' />
+                        </h1>
                     </IndexLink>
 
                     <div className='collapse navbar-collapse' id='nav1'>

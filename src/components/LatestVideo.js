@@ -25,13 +25,15 @@ class LatestVideo extends React.Component {
             <div className='card' key={video.id} style={(index+1) % 3 == 0 ? style : {}}>
                 <img className='card-img-top' src={video.imageSrc} alt='Video' />
                 <div className='card-body'>
-                    <h5 className='card-title'>{video.title}</h5>
+                    <h3 className='card-title'>{video.title}</h3>
                     <p className='card-text date'>
-                        <img src={calendar} alt='calendar' />
+                        {/* <img src={calendar} alt='calendar' /> */}
+                        <i className="fa fa-calendar" aria-hidden="true" />
                         <small className='text-muted'>{video.date}</small>
                     </p>
                     <p className='card-text views'>
-                        <img src={eye} alt='eye' />
+                        {/* <img src={eye} alt='eye' /> */}
+                        <i className="fa fa-eye" aria-hidden="true" />
                         &nbsp;{video.views}&nbsp;views
                     </p>
                     <p className='card-text description'>{video.description}</p>
