@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/stylesheets/components/NavigationBar.scss';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+
 import headerLogo from '../assets/images/header_logo.png';
 import headerLogoDesc from '../assets/images/header_logo_desc.png';
 import headerApple from '../assets/images/header_apple.png';
@@ -10,9 +12,47 @@ import { IndexLink } from 'react-router';
 
 class NavigationBar extends React.Component {
     render() {
+        const title = <div className='title'><img src={headerCart} alt='Header Cart' width='15' />Cart</div>;
+
         return (
             <div>
-                <nav className='navbar navbar-expand-md navbar-light bg-light header-nav'>
+                <Navbar collapseOnSelect fluid id='nav1'>
+                    <Navbar.Header>
+                        <Navbar.Brand>
+                            <IndexLink to='/'>
+                                <h1>
+                                    <img src={headerLogo} alt='Header Logo' />
+                                    <img src={headerLogoDesc} alt='Header Logo Desc' />
+                                </h1>
+                            </IndexLink>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav pullRight>
+                            <NavItem eventKey={1} href="#">
+                                <img src={headerApple} alt='Header Apple' />
+                            </NavItem>
+                            <NavItem eventKey={2} href="#">
+                                <img src={headerPlay} alt='Header Play' />
+                            </NavItem>
+                            <NavItem enventKey={3} href="#" className='header-anchor'>
+                                Log In
+                            </NavItem>
+                            <NavItem enventKey={4} href="#" className='header-anchor'>
+                                Sign Up
+                            </NavItem>
+                            <NavDropdown eventKey={3} title={title} id="basic-nav-dropdown">
+                                <MenuItem eventKey={3.1}>Action</MenuItem>
+                                <MenuItem eventKey={3.2}>Another action</MenuItem>
+                                <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                                <MenuItem divider />
+                                <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                            </NavDropdown>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+                {/* <nav className='navbar navbar-expand-md navbar-light bg-light header-nav'>
                     <button
                         className='navbar-toggler navbar-toggler-right'
                         type='button'
@@ -117,7 +157,7 @@ class NavigationBar extends React.Component {
                             <input type='text' className='form-control' placeholder='Search' />
                         </div>
                     </div>
-                </nav>
+                </nav> */}
             </div>
         );
     }
