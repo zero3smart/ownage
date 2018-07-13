@@ -76,10 +76,10 @@ class NavigationBar extends React.Component {
                             </NavItem>
                         </Nav>
                         <Navbar.Form pullRight>
-                            <FormGroup>
+                            <FormGroup className='has-search'>
                                 <FormControl type="text" placeholder="Search" />
-                            </FormGroup>{' '}
-                            <Button type="submit">Submit</Button>
+                                <span className='fa fa-search form-control-feedback' />
+                            </FormGroup>
                         </Navbar.Form>
                     </Navbar.Collapse>
                 </Navbar>
