@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/stylesheets/components/NavigationBar.scss';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button } from 'react-bootstrap';
 
 import headerLogo from '../assets/images/header_logo.png';
 import headerLogoDesc from '../assets/images/header_logo_desc.png';
@@ -36,83 +36,54 @@ class NavigationBar extends React.Component {
                             <NavItem eventKey={2} href="#">
                                 <img src={headerPlay} alt='Header Play' />
                             </NavItem>
-                            <NavItem enventKey={3} href="#" className='header-anchor'>
+                            <NavItem eventKey={3} href="#" className='header-anchor'>
                                 Log In
                             </NavItem>
-                            <NavItem enventKey={4} href="#" className='header-anchor'>
+                            <NavItem eventKey={4} href="#" className='header-anchor'>
                                 Sign Up
                             </NavItem>
-                            <NavDropdown eventKey={3} title={title} id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1}>Action</MenuItem>
-                                <MenuItem eventKey={3.2}>Another action</MenuItem>
-                                <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                            <NavItem />
+                            <NavDropdown eventKey={5} title={title} id="basic-nav-dropdown">
+                                <MenuItem eventKey={5.1}>Action</MenuItem>
+                                <MenuItem eventKey={5.2}>Another action</MenuItem>
+                                <MenuItem eventKey={5.3}>Something else here</MenuItem>
                                 <MenuItem divider />
-                                <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                                <MenuItem eventKey={5.4}>Separated link</MenuItem>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                {/* <nav className='navbar navbar-expand-md navbar-light bg-light header-nav'>
-                    <button
-                        className='navbar-toggler navbar-toggler-right'
-                        type='button'
-                        data-toggle='collapse'
-                        data-target='#nav1'
-                        aria-controls='nav1'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation'>
-                        <span className='navbar-toggler-icon' />
-                    </button>
-
-                    <IndexLink to='/' activeClassName='active' className='navbar-brand'>
-                        <h1>
-                            <img src={headerLogo} alt='Header Logo' />
-                            <img src={headerLogoDesc} alt='Header Logo Desc' />
-                        </h1>
-                    </IndexLink>
-
-                    <div className='collapse navbar-collapse' id='nav1'>
-                        <ul className='navbar-nav mr-auto' />
-                        <a href='#' className='navbar-text ml-4'>
-                            <img src={headerApple} alt='Header Apple' />
-                        </a>
-                        <a href='#' className='navbar-text ml-4'>
-                            <img src={headerPlay} alt='Header Play' />
-                        </a>
-                        <div className='vertical-separator ml-4' />
-                        <a href='#' className='navbar-text ml-4 header-anchor'>
-                            Log In
-                        </a>
-                        <div className='vertical-separator ml-4' />
-                        <a href='#' className='navbar-text ml-4 header-anchor'>
-                            Sign Up
-                        </a>
-                        <ul className='nav navbar-nav header-cart ml-4'>
-                            <li>
-                                <a href='#' className='Bitmap'>
-                                    <img src={headerCart} alt='Header Cart' width='15' />
-                                </a>
-                            </li>
-                            <li className='nav-item dropdown'>
-                                <a
-                                    className='nav-link dropdown-toggle'
-                                    href='http://example.com'
-                                    id='navbarDropdownMenuLink'
-                                    data-toggle='dropdown'
-                                    aria-haspopup='true'
-                                    aria-expanded='false'>
-                                    Cart
-                                </a>
-                                <div className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                                    <a className='dropdown-item' href='#'>Action</a>
-                                    <a className='dropdown-item' href='#'>Another action</a>
-                                    <a className='dropdown-item' href='#'>Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <nav className='navbar navbar-expand-md navbar-light bg-light nav-links'>
+                <Navbar fluid id='nav2'>
+                    <Navbar.Header>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav pullLeft>
+                            <NavItem eventKey={1} href='/prank-all-videos'>
+                                <span className='separator'>PRANK CALL VIDEOS</span>
+                            </NavItem>
+                            <NavItem eventKey={2} href='/request-prank'>
+                                <span className='separator'>REQUEST A PRANK</span>
+                            </NavItem>
+                            <NavItem eventKey={3} href='/store'>
+                                <span className='separator'>STORE</span>
+                            </NavItem>
+                            <NavItem eventKey={4} href='/apps'>
+                                <span className='separator'>APPS</span>
+                            </NavItem>
+                            <NavItem eventKey={5} href='/blog'>
+                                <span className='separator'>BLOG</span>
+                            </NavItem>
+                        </Nav>
+                        <Navbar.Form pullRight>
+                            <FormGroup>
+                                <FormControl type="text" placeholder="Search" />
+                            </FormGroup>{' '}
+                            <Button type="submit">Submit</Button>
+                        </Navbar.Form>
+                    </Navbar.Collapse>
+                </Navbar>
+                {/* <nav className='navbar navbar-expand-md navbar-light bg-light nav-links'>
                     <button
                         className='navbar-toggler navbar-toggler-right'
                         type='button'
