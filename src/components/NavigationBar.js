@@ -83,52 +83,6 @@ class NavigationBar extends React.Component {
                         </Navbar.Form>
                     </Navbar.Collapse>
                 </Navbar>
-                {/* <nav className='navbar navbar-expand-md navbar-light bg-light nav-links'>
-                    <button
-                        className='navbar-toggler navbar-toggler-right'
-                        type='button'
-                        data-toggle='collapse'
-                        data-target='#nav2'
-                        aria-controls='nav2'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation'>
-                        <span className='navbar-toggler-icon' />
-                    </button>
-
-                    <div className='collapse navbar-collapse' id='nav2'>
-                        <ul className='navbar-nav mr-auto'>
-                            <li className='nav-item'>
-                                <IndexLink to='/prank-all-videos' activeClassName='active' className='nav-link'>
-                                    <span className='separator'>PRANK CALL VIDEOS</span>
-                                </IndexLink>
-                            </li>
-                            <li className='nav-item'>
-                                <IndexLink to='/request-prank' activeClassName='active' className='nav-link'>
-                                    <span className='separator'>REQUEST A PRANK</span>
-                                </IndexLink>
-                            </li>
-                            <li className='nav-item'>
-                                <IndexLink to='/store' activeClassName='active' className='nav-link'>
-                                    <span className='separator'>STORE</span>
-                                </IndexLink>
-                            </li>
-                            <li className='nav-item'>
-                                <IndexLink to='/apps' activeClassName='active' className='nav-link'>
-                                    <span className='separator'>APPS</span>
-                                </IndexLink>
-                            </li>
-                            <li className='nav-item'>
-                                <IndexLink to='/blog' activeClassName='active' className='nav-link'>
-                                    <span className='separator'>BLOG</span>
-                                </IndexLink>
-                            </li>
-                        </ul>
-                        <div className='has-search'>
-                            <span className='fa fa-search form-control-feedback'></span>
-                            <input type='text' className='form-control' placeholder='Search' />
-                        </div>
-                    </div>
-                </nav> */}
             </div>
         );
     }

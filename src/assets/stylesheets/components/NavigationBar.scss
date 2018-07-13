@@ -74,6 +74,8 @@
     border: none;
 
     &.navbar {
+        margin-bottom: 10px;
+
         .navbar-collapse {
             padding: 0;
 
@@ -81,7 +83,7 @@
                 font-size: 20px;
                 color: #636363;
                 font-weight: bold;
-                margin-right: 20px;
+                margin-right: 75px;
 
                 &:first-child {
                     padding-left: 0;
@@ -91,6 +93,7 @@
         .navbar-form {
             .has-search {
                 position: relative;
+                margin-top: -6px;
 
                 input {
                     color: #636363;
@@ -110,8 +113,8 @@
                     height: 2.775rem;
                     line-height: 2.587rem;
                     text-align: center;
-                    right: 3px;
-                    top: 3px;
+                    right: 7px;
+                    top: 8px;
                     pointer-events: none;
                     font-size: 17px;
                     margin: 0;

@@ -1,4 +1,7 @@
 .latest-video-container {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 75px;
+
     .card {
         width: 31%;
         float: left;
@@ -51,5 +54,14 @@
             font-size: 21.333333333333332px;
             color: #636363;
         }
+    }
+
+    .btn-view-more {
+        width: 186px;
+        height: 68px;
+        background: #ffa500;
+        color: #fff;
+        font-size: 29.333333333333332px;
+        padding: 16px 12px;
     }
 }

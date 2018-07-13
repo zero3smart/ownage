@@ -17,9 +17,43 @@
         }
     }
 
-    h2 {
-        font-size: 57.333333333333336px;
-        text-align: center;
-        font-weight: bold;
+    #latest-video {
+        h2 {
+            font-size: 57.333333333333336px;
+            text-align: center;
+            font-weight: bold;
+            margin: 75px 0 25px 0;
+        }
+    }
+
+    .request-a-prank-call {
+        background: url('../../images/request-a-prank-call.png');
+        width: 1328px;
+        height: 380px;
+        margin: 75px 0;
+
+        h2 {
+            padding-top: 49px;
+            color: #282828;
+            font-weight: normal;
+            font-size: 57.333333333333336px;
+            text-align: center;
+        }
+
+        p {
+            padding: 0 82px;
+            color: #282828;
+            font-size: 29.666667px;
+        }
+
+        .btn-submit-request {
+            width: 318px;
+            height: 72px;
+            background: #ffa500;
+            color: #fff;
+            font-size: 29.333333333333332px;
+            padding: 16px 12px;
+        }
+
     }
 }

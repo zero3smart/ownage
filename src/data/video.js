@@ -53,6 +53,15 @@ export const videos = {
             "videoSrc": "http://youtube.com/OwnagePranks",
             "views": "512.1K",
             "description": "This guy in the UK had his car stolen, he absolutely LOSES IT when the thief calls..."
+        },
+        {
+            "id": 7,
+            "title": "Insane Arab Car Thief Calls Back Victim (UK)",
+            "date": "13 weeks ago",
+            "imageSrc": "images/video3.png",
+            "videoSrc": "http://youtube.com/OwnagePranks",
+            "views": "512.1K",
+            "description": "This guy in the UK had his car stolen, he absolutely LOSES IT when the thief calls..."
         }
     ]
 };
