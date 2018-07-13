@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchVideos } from '../actions/videoActions';
 import '../assets/stylesheets/components/LatestVideo.scss';
-import eye from '../assets/images/eye.png';
-import calendar from '../assets/images/calendar_sm.png';
 import { videos } from '../data/video.js';
 
 class LatestVideo extends React.Component {
@@ -27,13 +25,10 @@ class LatestVideo extends React.Component {
                 <div className='card-body'>
                     <h3 className='card-title'>{video.title}</h3>
                     <p className='card-text date'>
-                        {/* <img src={calendar} alt='calendar' /> */}
                         <i className="fa fa-calendar" aria-hidden="true" />
                         <small className='text-muted'>{video.date}</small>
                     </p>
                     <p className='card-text views'>
-                        {/* <img src={eye} alt='eye' /> */}
-                        <i className="fa fa-eye" aria-hidden="true" />
                         &nbsp;{video.views}&nbsp;views
                     </p>
                     <p className='card-text description'>{video.description}</p>
@@ -46,6 +41,7 @@ class LatestVideo extends React.Component {
                 <div className=''>
                     {videoList}
                 </div>
+
             </div>
         );
     }

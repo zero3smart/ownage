@@ -38,6 +38,7 @@
     "lodash": "4.17.4",
     "path": "0.12.7",
     "react": "15.6.1",
+    "react-bootstrap": "^0.32.1",
     "react-d3-map-choropleth": "0.5.1",
     "react-dom": "^15.6.1",
     "react-redux": "5.0.5",
