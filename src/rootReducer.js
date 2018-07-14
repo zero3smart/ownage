@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import videos from './reducers/videos';
+import video from './reducers/video';
+import blog from './reducers/blog';
 
 export default combineReducers({
-    videos
+    video,
+    blog
 });

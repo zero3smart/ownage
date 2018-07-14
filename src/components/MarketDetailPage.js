@@ -3,7 +3,7 @@ import { IndexLink } from 'react-router';
 import { connect } from 'react-redux';
 import CompanyCard from './CompanyCard';
 import classnames from 'classnames';
-import { fetchCompanies, fetchMarkets } from '../actions/videoActions';
+import { fetchCompanies, fetchMarkets } from '../actions/actions';
 
 class MarketDetailPage extends React.Component {
     constructor(props) {

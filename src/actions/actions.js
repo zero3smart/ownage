@@ -1,14 +1,21 @@
-import { SET_VIDEOS } from './types';
+import { SET_VIDEO, SET_BLOG } from './types';
 import axios from 'axios';
 
-export function setVideos(videos) {
+export function setVideo(videos) {
     return {
-        type: SET_VIDEOS,
+        type: SET_VIDEO,
         videos
     };
 }
 
-export function fetchVideos() {
+export function setBlog(blogs) {
+    return {
+        type: SET_BLOG,
+        blogs
+    };
+}
+
+export function fetchVideo() {
     // return dispatch => {
     //     return axios.get(process.env.API_URL + '/api/markets').then(res => {
     //         if (res.status !== 200) {
@@ -28,10 +35,25 @@ export function fetchVideos() {
                     return;
                 }
                 response.json().then(data => {
-                    dispatch(setMarkets(data.markets));
+                    dispatch(setVideo(data.videos));
                 });
             });
         };
+}
+
+export function fetchBlog() {
+    return dispatch => {
+        return fetch("data/blog.json")
+            .then(response => {
+                if (response.status !== 200) {
+                    console.log(`There was a problem: ${response.status}`)
+                    return;
+                }
+                response.json().then(data => {
+                    dispatch(setBlog(data.blogs));
+                });
+            });
+    };
 }
 
 // export function fetchCompanies(url) {

@@ -1,5 +1,6 @@
-.latest-video-container {
+.featured-blog-container {
     border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
     padding-bottom: 75px;
 
     h2 {
@@ -10,7 +11,7 @@
     }
 
     .card {
-        width: 31%;
+        width: 48%;
         float: left;
         height: 600px;
         margin-right: 46px;
@@ -39,21 +40,6 @@
             .text-muted {
                 font-size: 20px;
                 color: #2fdbd9 !important;
-            }
-        }
-
-        .card-text.views {
-            display: inline-block;
-            padding-left: 18px;
-            color: #636363;
-            font-size: 20px;
-
-            .fa-eye {
-                color: #636363;
-            }
-
-            img {
-                margin-top: -5px;
             }
         }
 

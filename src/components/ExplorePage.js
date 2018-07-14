@@ -1,7 +1,7 @@
 import React from 'react';
 import MarketsList from './MarketsList';
 import { connect } from 'react-redux';
-import { fetchMarkets } from '../actions/videoActions';
+import { fetchMarkets } from '../actions/actions';
 
 import '../assets/stylesheets/components/ExplorePage.scss';
 

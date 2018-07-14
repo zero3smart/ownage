@@ -1,5 +1,7 @@
 import React from 'react';
 import LatestVideo from './LatestVideo';
+import BestVideo from './BestVideo';
+import FeaturedBlog from './FeaturedBlog';
 import '../assets/stylesheets/components/HomePage.scss';
 import headerBanner2 from '../assets/images/header_banner2.png';
 import appStoreBtn from '../assets/images/app_store_btn.png';
@@ -23,10 +25,7 @@ class HomePage extends React.Component {
                         <img src={googlePlayBtn} alt='Google Play Button' />
                     </a>
                 </div>
-                <div id='latest-video'>
-                    <h2>Latest Videos</h2>
-                    <LatestVideo />
-                </div>
+                <LatestVideo />
                 <div className='request-a-prank-call'>
                     <h2>Request A Prank Call</h2>
                     <p>Have you been wanting to prank someone but need some professional help? Looking for that sweet revenge
@@ -43,6 +42,8 @@ class HomePage extends React.Component {
                         </Button>
                     </div>
                 </div>
+                <FeaturedBlog />
+                <BestVideo />
             </div>
         );
     }

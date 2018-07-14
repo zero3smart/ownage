@@ -1,1 +1,2 @@
-export const SET_VIDEOS = 'SET_VIDEOS';
+export const SET_VIDEO = 'SET_VIDEO';
+export const SET_BLOG = 'SET_BLOG';
