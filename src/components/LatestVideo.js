@@ -69,7 +69,7 @@ class LatestVideo extends React.Component {
 }
 
 LatestVideo.propTypes = {
-    // videos: React.PropTypes.array.isRequired,
+    // video: React.PropTypes.array.isRequired,
     // fetchVideo: React.PropTypes.func.isRequired
 }
 

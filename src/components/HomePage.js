@@ -2,6 +2,7 @@ import React from 'react';
 import LatestVideo from './LatestVideo';
 import BestVideo from './BestVideo';
 import FeaturedBlog from './FeaturedBlog';
+import ProductShop from './ProductShop';
 import '../assets/stylesheets/components/HomePage.scss';
 import headerBanner2 from '../assets/images/header_banner2.png';
 import appStoreBtn from '../assets/images/app_store_btn.png';
@@ -44,6 +45,7 @@ class HomePage extends React.Component {
                 </div>
                 <FeaturedBlog />
                 <BestVideo />
+                <ProductShop />
             </div>
         );
     }
