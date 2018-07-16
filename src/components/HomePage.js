@@ -3,12 +3,13 @@ import LatestVideo from './LatestVideo';
 import BestVideo from './BestVideo';
 import FeaturedBlog from './FeaturedBlog';
 import ProductShop from './ProductShop';
+import Funnest from './Funnest';
 import AnimatedPrankCall from './AnimatedPrankCall';
 import '../assets/stylesheets/components/HomePage.scss';
 import headerBanner2 from '../assets/images/header_banner2.png';
 import appStoreBtn from '../assets/images/app_store_btn.png';
 import googlePlayBtn from '../assets/images/google_play_btn.png';
-import { Button } from 'react-bootstrap';
+import { Button, Clearfix } from 'react-bootstrap';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -48,6 +49,8 @@ class HomePage extends React.Component {
                 <BestVideo />
                 <ProductShop />
                 <AnimatedPrankCall />
+                <Clearfix />
+                <Funnest />
             </div>
         );
     }

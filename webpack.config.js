@@ -28,7 +28,7 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'MKT',
+      title: 'ownage',
       filename: 'index.html',
       template: 'src/index.html',
       inject: 'body',
@@ -107,7 +107,7 @@ module.exports = {
   resolve: {
     modules: ['node_modules'],
       alias: {
-        'react-d3-map-choropleth.css': path.join(__dirname, '../node_modules/react-d3-map-choropleth/css/react-d3-map-choropleth.css')
+        'slick.css': path.join(__dirname, '../node_modules/slick-carousel/slick/slick.css')
        }
   },
   node: {

@@ -1,0 +1,150 @@
+.funnest-container {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 75px;
+
+    h2 {
+        font-size: 57.333333333333336px;
+        text-align: center;
+        font-weight: bold;
+        margin: 75px 0 25px 0;
+    }
+
+    .video-list-section {
+        display: flex;
+
+        .card {
+            background: #fff;
+            padding: 10px;
+            width: auto !important;
+
+            .card-img-top {
+                display: block;
+                width: 482px;
+                height: 339px;
+            }
+
+            .card-send-prank {
+                width: 480px;
+                height: 70px;
+                background: #237f11;
+                color: #fff;
+                font-size: 32px;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+
+    .prev-next-section {
+        position: absolute;
+
+        .btn-left-arrow {
+            position: relative;
+            left: 0;
+            width: 49px;
+            height: 48px;
+            background: url('../../images/left-arrow.png');
+            border: none;
+        }
+
+        .btn-right-arrow {
+            position: relative;
+            right: 0;
+            width: 49px;
+            height: 48px;
+            background: url('../../images/right-arrow.png');
+            border: none;
+        }
+    }
+
+    .btn-check-out {
+        width: 186px;
+        height: 68px;
+        color: #1ab1af;
+        font-size: 37.333333333333336px;
+        padding: 16px 12px;
+    }
+
+    /* slick carousel */
+    /*.slick-slider {
+        margin: 30px auto 50px;
+    }
+
+    .slick-list, .slick-slider {
+        position: relative;
+        display: block;
+    }
+
+    .slick-next:before, .slick-prev:before {
+        color: #fff;
+        background: #000;
+        font-size: 40px;
+        content: '';
+    }
+
+    .slick-active {
+        .card {
+            background: #fff;
+            padding: 10px;
+            width: auto;
+
+            .card-img-top {
+                margin: 37px auto;
+                display: block;
+                width: 482px;
+                height: 339px;
+            }
+        }
+    }
+
+    .slick-prev {
+        left: -95px;
+        width: 49px;
+        height: 48px;
+        background: url('../../images/left-arrow.png');
+    }
+
+    .slick-next {
+        right: -95px;
+        width: 49px;
+        height: 48px;
+        background: url('../../images/right-arrow.png');
+    }
+
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        .slick-slide {
+            width: 502px !important;
+        }
+
+        .slick-cloned {
+            width: 502px !important;
+        }
+    }
+
+    .center .slick-center h3 {
+        color: #e67e22;
+        opacity: 1;
+        -ms-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+
+    .center h3 {
+        opacity: .8;
+        transition: all .3s ease;
+        background: #5f9ea0;
+        color: #fff;
+        font-size: 36px;
+        line-height: 100px;
+        margin: 10px;
+        padding: 2%;
+        position: relative;
+        text-align: center;
+    }*/
+}
