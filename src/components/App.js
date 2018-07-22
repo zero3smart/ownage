@@ -1,20 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import '../assets/stylesheets/components/App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Switch, Route } from 'react-router-dom';
+
+import HomePage from './HomePage';
 
 class App extends React.Component {
     render() {
         return (
             <div className='main-container'>
                 <Header />
-                {this.props.children}
+                <Switch>
+                    <Route path="/" exact component={HomePage} />
+                </Switch>
             </div>
         );
     }
 }
-
-App.propTypes = {
-    children: React.PropTypes.object.isRequired
-};
 
 export default App;

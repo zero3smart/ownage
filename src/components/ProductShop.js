@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchProduct } from '../actions/actions';
 import '../assets/stylesheets/components/ProductShop.scss';
 import { product } from '../data/product.js';
-import { Button, Clearfix } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 class ProductShop extends React.Component {
     constructor(props) {
@@ -35,7 +36,7 @@ class ProductShop extends React.Component {
                     <p className='card-text price'>
                         <small className='text-muted'>{product.price}</small>
                     </p>
-                    <Button bsClass='btn btn-link card-more-details' href='#'>More Details</Button>
+                    <Button color='link' className='card-more-details'>More Details</Button>
                 </div>
             </div>
         ));
@@ -45,11 +46,11 @@ class ProductShop extends React.Component {
                 <h2>Shope With Us</h2>
                 <div className=''>
                     {productList}
-                    <Clearfix />
+                    <div className='clearfix' />
                     <div style={{ margin: '0 auto', width: '186px' }}>
                         <Button
-                            bsClass='btn btn-view-more'
-                            href='#'
+                            color='warning'
+                            className='btn-view-more'
                             onClick={() => {
                                 this.setState({ viewAll: true });
                             }}>
@@ -63,8 +64,8 @@ class ProductShop extends React.Component {
 }
 
 ProductShop.propTypes = {
-    // product: React.PropTypes.array.isRequired,
-    // fetchProduct: React.PropTypes.func.isRequired
+    // product: PropTypes.array.isRequired,
+    // fetchProduct: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state) {

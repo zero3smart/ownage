@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchBlog } from '../actions/actions';
 import '../assets/stylesheets/components/FeaturedBlog.scss';
 import { blog } from '../data/blog.js';
-import { Button, Clearfix } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 class FeaturedBlog extends React.Component {
     constructor(props) {
@@ -46,11 +47,11 @@ class FeaturedBlog extends React.Component {
                 <h2>Featured Blogs</h2>
                 <div className=''>
                     {blogList}
-                    <Clearfix />
+                    <div className='clearfix' />
                     <div style={{ margin: '0 auto', width: '186px' }}>
                         <Button
-                            bsClass='btn btn-view-more'
-                            href='#'
+                            color='warning'
+                            className='btn-view-more'
                             onClick={() => {
                                 if (rowCount <= blog.blogs.length / 2)
                                     this.setState({ rowCount: rowCount + 1 });
@@ -65,8 +66,8 @@ class FeaturedBlog extends React.Component {
 }
 
 FeaturedBlog.propTypes = {
-    // blog: React.PropTypes.array.isRequired,
-    // fetchBlog: React.PropTypes.func.isRequired
+    // blog: PropTypes.array.isRequired,
+    // fetchBlog: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state) {

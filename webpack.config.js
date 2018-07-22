@@ -1,13 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const dotenv = require('dotenv').config();
 
 module.exports = {
-  devtool: 'inline-sourcemap',
+  devtool: 'cheap-module-eval-source-map',
   entry: [
+    'react-hot-loader/patch',
     path.join(__dirname, '/src/index.js')
   ],
+  target: 'web',
+  mode: 'development',
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js',
@@ -20,10 +24,12 @@ module.exports = {
     contentBase: [
       path.join(__dirname, '/src/assets'),
       path.join(__dirname, '/src/components'),
-      path.join(__dirname, '/node_modules')
+      path.join(__dirname, '/node_modules'),
+      path.join(__dirname, '/bower_components')
     ]
   },
   plugins: [
+    new HardSourceWebpackPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -34,7 +40,11 @@ module.exports = {
       inject: 'body',
       favicon: 'public/favicon.ico',
       hash: true,
-      cache: true
+      cache: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
@@ -54,38 +64,44 @@ module.exports = {
     })*/
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
-        include: [
-          path.join(__dirname, 'src'),
-        ],
         exclude: /(node_modules|bower_components)/,
-        loaders: [ 'react-hot-loader', 'babel-loader' ]
+        use: ['babel-loader']
       },
       {
-        test: /\.css$/,
-        include: [
-          /node_modules/
-        ],
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        test: /\.eot(\?v=\d+.\d+.\d+)?$/,
+        use: ['file-loader']
       },
       {
-        test: /\.scss$/,
-        include: [
-          path.join(__dirname, 'src'),
-        ],
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        test: /(\.css|\.scss|\.sass)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          }, {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [
+                require('autoprefixer')
+              ],
+              sourceMap: true
+            }
+          }, {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [path.resolve(__dirname, 'src', 'scss')],
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
-        test: /\.sass$/,
-        include: [
-          path.join(__dirname, 'src')
-        ],
-        loaders: ["style-loader", "css-loader", "sass-loader"]
-      },
-      {
-        test: /.*\.(gif|png|jpe?g|eot|woff2|woff|ttf|svg)$/i,
+        test: /.*\.(gif|png|jpe?g|woff2|woff|ttf|svg)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -105,10 +121,7 @@ module.exports = {
     ]
   },
   resolve: {
-    modules: ['node_modules'],
-      alias: {
-        'slick.css': path.join(__dirname, '../node_modules/slick-carousel/slick/slick.css')
-       }
+    extensions: ['*', '.js', '.jsx', '.json']
   },
   node: {
     net: 'empty',

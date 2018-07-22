@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchVideo } from '../actions/actions';
 import '../assets/stylesheets/components/LatestVideo.scss';
 import { video } from '../data/video.js';
-import { Button, Clearfix } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 class LatestVideo extends React.Component {
     constructor(props) {
@@ -50,11 +51,11 @@ class LatestVideo extends React.Component {
                 <h2>Latest Videos</h2>
                 <div className=''>
                     {videoList}
-                    <Clearfix />
+                    <div className='clearfix' />
                     <div style={{ margin: '0 auto', width: '186px' }}>
                         <Button
-                            bsClass='btn btn-view-more'
-                            href='#'
+                            color='warning'
+                            className='btn-view-more'
                             onClick={() => {
                                 if (rowCount <= video.videos.length / 3)
                                     this.setState({ rowCount: rowCount + 1 });
@@ -69,8 +70,8 @@ class LatestVideo extends React.Component {
 }
 
 LatestVideo.propTypes = {
-    // video: React.PropTypes.array.isRequired,
-    // fetchVideo: React.PropTypes.func.isRequired
+    // video: PropTypes.array.isRequired,
+    // fetchVideo: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state) {

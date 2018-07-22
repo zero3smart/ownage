@@ -1,7 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/stylesheets/components/NavigationBar.scss';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button } from 'react-bootstrap';
-
 import headerLogo from '../assets/images/header_logo.png';
 import headerLogoDesc from '../assets/images/header_logo_desc.png';
 import headerApple from '../assets/images/header_apple.png';
@@ -10,50 +9,137 @@ import headerCart from '../assets/images/header_cart.png';
 
 import { IndexLink } from 'react-router';
 
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
+
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
 class NavigationBar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+          isOpen: false
+        };
+    }
+
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+
     render() {
         const title = <div className='title'><img src={headerCart} alt='Header Cart' width='15' />Cart</div>;
 
         return (
             <div>
-                <Navbar collapseOnSelect fluid id='nav1'>
-                    <Navbar.Header>
-                        <Navbar.Brand>
-                            <IndexLink to='/'>
-                                <h1>
-                                    <img src={headerLogo} alt='Header Logo' />
-                                    <img src={headerLogoDesc} alt='Header Logo Desc' />
-                                </h1>
-                            </IndexLink>
-                        </Navbar.Brand>
-                        <Navbar.Toggle />
-                    </Navbar.Header>
-                    <Navbar.Collapse>
-                        <Nav pullRight>
-                            <NavItem eventKey={1} href="#">
-                                <img src={headerApple} alt='Header Apple' />
+                <Navbar light expand='md' id='nav1'>
+                    <NavbarBrand href='/'>
+                        <h1>
+                            <img src={headerLogo} alt='Header Logo' />
+                            <img src={headerLogoDesc} alt='Header Logo Desc' />
+                        </h1>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className='ml-auto' navbar>
+                            <NavItem>
+                                <NavLink href='/'>
+                                    <img src={headerApple} alt='Header Apple' />
+                                </NavLink>
                             </NavItem>
-                            <NavItem eventKey={2} href="#">
-                                <img src={headerPlay} alt='Header Play' />
+                            <NavItem>
+                                <NavLink href='/'>
+                                    <img src={headerPlay} alt='Header Play' />
+                                </NavLink>
                             </NavItem>
-                            <NavItem eventKey={3} href="#" className='header-anchor'>
-                                Log In
+                            <NavItem>
+                                <div className='vertical-separator' />
                             </NavItem>
-                            <NavItem eventKey={4} href="#" className='header-anchor'>
-                                Sign Up
+                            <NavItem>
+                                <NavLink href='/' className='header-anchor'>
+                                    Log In
+                                </NavLink>
                             </NavItem>
-                            <NavItem />
-                            <NavDropdown eventKey={5} title={title} id="basic-nav-dropdown">
-                                <MenuItem eventKey={5.1}>Action</MenuItem>
-                                <MenuItem eventKey={5.2}>Another action</MenuItem>
-                                <MenuItem eventKey={5.3}>Something else here</MenuItem>
-                                <MenuItem divider />
-                                <MenuItem eventKey={5.4}>Separated link</MenuItem>
-                            </NavDropdown>
+                            <NavItem>
+                                <div className='vertical-separator' />
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href='/' className='header-anchor'>
+                                    Sign Up
+                                </NavLink>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar id='basic-nav-dropdown'>
+                                <DropdownToggle nav caret>
+                                    {title}
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem>
+                                        Option 1
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Option 2
+                                    </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>
+                                        Reset
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
                         </Nav>
-                    </Navbar.Collapse>
+                    </Collapse>
                 </Navbar>
-                <Navbar fluid id='nav2'>
+                <Navbar light expand='md' id='nav2'>
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav navbar>
+                            <NavItem>
+                                <NavLink href='/prank-all-videos'>
+                                    <span>PRANK CALL VIDEOS</span>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href='/request-prank'>
+                                    <span>REQUEST A PRANK</span>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href='/apps'>
+                                    <span>APPS</span>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href='/store'>
+                                    <span>STORE</span>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href='/blog'>
+                                    <span>BLOG</span>
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
+                        <div className='ml-auto'>
+                            <div className='has-search'>
+                                <Input type='email' name='email' id='search' placeholder='Search' />
+                                <span className='fa fa-search form-control-feedback' />
+                            </div>
+                        </div>
+                    </Collapse>
+                </Navbar>
+
+                {/*<Navbar fluid id='nav2'>
                     <Navbar.Header>
                         <Navbar.Toggle />
                     </Navbar.Header>
@@ -77,12 +163,12 @@ class NavigationBar extends React.Component {
                         </Nav>
                         <Navbar.Form pullRight>
                             <FormGroup className='has-search'>
-                                <FormControl type="text" placeholder="Search" />
+                                <FormControl type='text' placeholder='Search' />
                                 <span className='fa fa-search form-control-feedback' />
                             </FormGroup>
                         </Navbar.Form>
                     </Navbar.Collapse>
-                </Navbar>
+                </Navbar>*/}
             </div>
         );
     }

@@ -21,22 +21,29 @@
             }
         }
 
-        .nav {
-            margin-top: 15px;
-        }
+        .nav-item {
+            padding: 0 15px;
 
-        .header-anchor a {
-            color: #2fdbd9 !important;
-            text-decoration: none;
-            font-size: 21px;
+            .nav-link {
 
-            &:hover,
-            &:active,
-            &:link {
-                color: #ffa500 !important;
+            }
+
+            a.header-anchor {
+                color: #2fdbd9 !important;
                 text-decoration: none;
+                font-size: 21px;
+                padding: 5px 8px;
+
+                &:hover,
+                &:active,
+                &:link {
+                    color: #ffa500 !important;
+                    text-decoration: none;
+                }
             }
         }
+
+
 
         #basic-nav-dropdown {
             background: #2fdbd9 !important;
@@ -52,10 +59,8 @@
                 }
             }
 
-            .caret {
+            .dropdown-toggle {
                 color: #fff;
-                margin-top: -10px;
-                margin-left: 3px;
             }
         }
     }
@@ -63,10 +68,9 @@
 
 .vertical-separator {
     width: 1px;
+    height: 80%;
     background: #eee;
-    border-width: 4px 0;
-    border-style: solid;
-    border-color: #fff;
+    margin-top: 6px;
 }
 
 #nav2 {
@@ -79,7 +83,7 @@
         .navbar-collapse {
             padding: 0;
 
-            li[role='presentation'] {
+            li.nav-item {
                 font-size: 20px;
                 color: #636363;
                 font-weight: bold;
@@ -90,10 +94,10 @@
                 }
             }
         }
-        .navbar-form {
+        .ml-auto {
             .has-search {
                 position: relative;
-                margin-top: -6px;
+                margin-top: 4px;
 
                 input {
                     color: #636363;
@@ -110,11 +114,10 @@
                     z-index: 2;
                     display: block;
                     width: 2.375rem;
-                    height: 2.775rem;
                     line-height: 2.587rem;
                     text-align: center;
-                    right: 7px;
-                    top: 8px;
+                    right: 0px;
+                    top: 2px;
                     pointer-events: none;
                     font-size: 17px;
                     margin: 0;

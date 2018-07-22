@@ -1,12 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, browserHistory } from 'react-router';
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './rootReducer';
 
-import routes from './routes';
+// import routes from './routes';
+
+import App from './components/App';
 
 const store = createStore(
   rootReducer,
@@ -17,7 +19,9 @@ const store = createStore(
 );
 
 render(
-  <Provider store={store}>
-    <Router history={browserHistory} routes={routes} />
-  </Provider>,document.getElementById('app')
+  (<Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>), document.getElementById('app')
 );

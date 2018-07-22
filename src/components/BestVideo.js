@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchVideo } from '../actions/actions';
 import '../assets/stylesheets/components/BestVideo.scss';
 import { video } from '../data/video.js';
-import { Button, Clearfix } from 'react-bootstrap';
 
 class BestVideo extends React.Component {
     constructor(props) {
@@ -46,14 +46,15 @@ class BestVideo extends React.Component {
                 <div className=''>
                     {videoList}
                 </div>
+                <div className='clearfix' />
             </div>
         );
     }
 }
 
 BestVideo.propTypes = {
-    // videos: React.PropTypes.array.isRequired,
-    // fetchVideo: React.PropTypes.func.isRequired
+    // videos: PropTypes.array.isRequired,
+    // fetchVideo: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state) {

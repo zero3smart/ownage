@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';

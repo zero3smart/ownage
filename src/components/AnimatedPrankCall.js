@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { fetchVideo } from '../actions/actions';
 import '../assets/stylesheets/components/AnimatedPrankCall.scss';
 import { video } from '../data/animated-prank-calls';
-import { Button, Clearfix } from 'react-bootstrap';
 
 class AnimatedPrankCall extends React.Component {
     constructor(props) {
@@ -46,7 +45,7 @@ class AnimatedPrankCall extends React.Component {
         return (
             <div className='animated-prank-call-container'>
                 <h2>Animated Prank Calls</h2>
-                <div className=''>
+                <div style={{display: 'inline-block'}}>
                     {videoList}
                 </div>
             </div>
@@ -55,8 +54,8 @@ class AnimatedPrankCall extends React.Component {
 }
 
 AnimatedPrankCall.propTypes = {
-    // video: React.PropTypes.array.isRequired,
-    // fetchVideo: React.PropTypes.func.isRequired
+    // video: PropTypes.array.isRequired,
+    // fetchVideo: PropTypes.func.isRequired
 }
 
 function mapStateToProps(state) {

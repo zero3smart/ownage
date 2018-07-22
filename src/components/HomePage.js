@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LatestVideo from './LatestVideo';
 import BestVideo from './BestVideo';
 import FeaturedBlog from './FeaturedBlog';
@@ -9,7 +10,7 @@ import '../assets/stylesheets/components/HomePage.scss';
 import headerBanner2 from '../assets/images/header_banner2.png';
 import appStoreBtn from '../assets/images/app_store_btn.png';
 import googlePlayBtn from '../assets/images/google_play_btn.png';
-import { Button, Clearfix } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -36,11 +37,9 @@ class HomePage extends React.Component {
                     so we can make this prank call AMAZING. Click below to start!</p>
                     <div style={{ margin: '0 auto', marginTop: '25px', width: '318px' }}>
                         <Button
-                            bsClass='btn btn-submit-request'
-                            href='#'
-                            onClick={() => {
-
-                            }}>
+                            color='warning'
+                            className='btn-submit-request'
+                        >
                             Submit Your Request
                         </Button>
                     </div>
@@ -49,7 +48,7 @@ class HomePage extends React.Component {
                 <BestVideo />
                 <ProductShop />
                 <AnimatedPrankCall />
-                <Clearfix />
+                <div className='clearfix' />
                 <Funnest />
             </div>
         );
