@@ -12,12 +12,20 @@
             position: absolute;
             left: 585px;
             top: 284px;
+
+            img {
+                width: 266px;
+            }
         }
 
         a#google-play-btn {
             position: absolute;
             left: 872px;
             top: 284px;
+
+            img {
+                width: 266px;
+            }
         }
     }
 
@@ -194,20 +202,104 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 576px;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 768px;
+            }
 
+            a#apple-store-btn {
+                position: absolute;
+                left: 339px !important;
+                top: 199px !important;
+                img {
+                    width: 126px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 479px !important;
+                top: 199px !important;
+                img {
+                    width: 126px !important;
+                }
+            }
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 992px;
+            }
 
+            a#apple-store-btn {
+                position: absolute;
+                left: 437px !important;
+                top: 238px !important;
+                img {
+                    width: 166px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 627px !important;
+                top: 238px !important;
+                img {
+                    width: 166px !important;
+                }
+            }
+        }
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    .home-container {
+        #banner2 {
+            position: relative;
+            padding: 75px 0;
+            border-bottom: 1px solid #e5e5e5;
 
+            img#header-banner2 {
+                width: 1328px;
+            }
+
+            a#apple-store-btn {
+                position: absolute;
+                left: 585px !important;
+                top: 284px !important;
+
+                img {
+                    width: 266px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 872px !important;
+                top: 284px !important;
+
+                img {
+                    width: 266px !important;
+                }
+            }
+        }
+    }
 }
