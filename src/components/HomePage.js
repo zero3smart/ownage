@@ -38,7 +38,7 @@ class HomePage extends React.Component {
         let numBlock = [];
         for (let i = 0; i < sCount.length; i++) {
             numBlock.push(
-                <React.Fragment>
+                <React.Fragment key={i}>
                     <div className='each-char'>
                         {sCount.charAt(i)}
                     </div>

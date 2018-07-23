@@ -7,22 +7,25 @@ import headerApple from '../assets/images/header_apple.png';
 import headerPlay from '../assets/images/header_play.png';
 import headerCart from '../assets/images/header_cart.png';
 
-import { IndexLink } from 'react-router';
-
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    Button,
+    Form,
+    FormGroup,
+    Label,
+    Input,
+    FormText
+} from 'reactstrap';
 
 class NavigationBar extends React.Component {
     constructor(props) {
@@ -30,7 +33,7 @@ class NavigationBar extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.state = {
-          isOpen: false
+            isOpen: false
         };
     }
 
@@ -41,7 +44,11 @@ class NavigationBar extends React.Component {
     }
 
     render() {
-        const title = <div className='title'><img src={headerCart} alt='Header Cart' width='15' />Cart</div>;
+        const title = (
+            <div className='title'>
+                <img src={headerCart} alt='Header Cart' width='15' />Cart
+            </div>
+        );
 
         return (
             <div>

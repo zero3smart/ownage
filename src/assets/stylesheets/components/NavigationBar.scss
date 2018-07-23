@@ -52,8 +52,21 @@
                 display: inline-block;
                 font-size: 18.594061px;
                 color: #fff;
+                position: relative;
+
+                &::after {
+                    content: '0';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background: #ffa500;
+                }
 
                 img {
+                    width: 20px;
                     margin-top: -5px;
                     margin-right: 8px;
                 }
