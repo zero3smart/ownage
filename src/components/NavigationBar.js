@@ -45,7 +45,7 @@ class NavigationBar extends React.Component {
 
         return (
             <div>
-                <Navbar light expand='md' id='nav1'>
+                <Navbar light expand='lg' id='nav1'>
                     <NavbarBrand href='/'>
                         <h1>
                             <img src={headerLogo} alt='Header Logo' />
@@ -101,7 +101,7 @@ class NavigationBar extends React.Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-                <Navbar light expand='md' id='nav2'>
+                <Navbar light expand='lg' id='nav2'>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav navbar>
                             <NavItem>

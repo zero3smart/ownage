@@ -1,0 +1,51 @@
+.header-container {
+    #banner1 {
+        img {
+            width: 1328px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .header-container {
+        #banner1 {
+            img {
+                width: 576px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .header-container {
+        #banner1 {
+            img {
+                width: 768px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .header-container {
+        #banner1 {
+            img {
+                width: 992px;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .header-container {
+        #banner1 {
+            img {
+                width: 1328px;
+            }
+        }
+    }
+}

@@ -50,7 +50,7 @@ class HomePage extends React.Component {
         return (
             <div className='home-container'>
                 <div id='banner2'>
-                    <img src={headerBanner2} alt='Header Banner2' />
+                    <img id='header-banner2' src={headerBanner2} alt='Header Banner2' />
                     <a href='#' id='apple-store-btn'>
                         <img src={appStoreBtn} alt='App Store Button' />
                     </a>

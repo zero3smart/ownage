@@ -4,6 +4,10 @@
         padding: 75px 0;
         border-bottom: 1px solid #e5e5e5;
 
+        img#header-banner2 {
+            width: 1328px;
+        }
+
         a#apple-store-btn {
             position: absolute;
             left: 585px;
@@ -186,4 +190,62 @@
             }
         }
     }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 576px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 768px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 992px;
+            }
+        }
+
+        a#apple-store-btn {
+            position: absolute;
+            left: 437px !important;
+            top: 238px !important;
+            img {
+                width: 166px;
+            }
+
+        }
+
+        a#google-play-btn {
+            position: absolute;
+            left: 627px !important;
+            top: 238px !important;
+            img {
+                width: 166px;
+            }
+
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

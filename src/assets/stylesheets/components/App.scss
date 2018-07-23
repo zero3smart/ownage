@@ -14,3 +14,35 @@ h1 {
     width: $page-width;
     margin: 0 auto;
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .main-container {
+        width: 576px;
+        margin: 0 auto;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .main-container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .main-container {
+        width: 992px;
+        margin: 0 auto;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .main-container {
+        width: 1328px;
+        margin: 0 auto;
+    }
+}
