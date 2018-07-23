@@ -1,9 +1,9 @@
-import { SET_VIDEO } from '../actions/types';
+import { SET_PRODUCT } from '../actions/types';
 
 export default (state = {}, action = {}) => {
     switch (action.type) {
-        case SET_VIDEO:
-            return action.video;
+        case SET_PRODUCT:
+            return action.product;
         default: return state;
     }
 }

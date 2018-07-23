@@ -1,0 +1,59 @@
+.gags-container {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 75px;
+
+    h2 {
+        font-size: 57.333333333333336px;
+        text-align: center;
+        font-weight: bold;
+        margin: 75px 0 25px 0;
+    }
+
+    .card {
+        width: 24%;
+        float: left;
+        height: 578px;
+        margin-right: 17px;
+        margin-bottom: 20px;
+        border: none;
+
+        .card-img-top {
+            margin: 37px auto;
+            display: block;
+            width: 310px;
+            height: 310px;
+        }
+
+        .card-title {
+            color: #282828;
+            font-size: 21.333333px;
+            text-align: center;
+        }
+
+        .card-text.price {
+            padding-right: 19px;
+            text-align: center;
+
+            .text-muted {
+                font-size: 26.666666666666668px;
+                color: #2fdbd9 !important;
+            }
+        }
+
+        .card-more-details {
+            color: #ffa500;
+            font-size: 21.333333333333332px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .btn-view-more {
+        width: 186px;
+        height: 68px;
+        background: #ffa500;
+        color: #fff;
+        font-size: 29.333333333333332px;
+        padding: 16px 12px;
+    }
+}

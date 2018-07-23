@@ -138,37 +138,6 @@ class NavigationBar extends React.Component {
                         </div>
                     </Collapse>
                 </Navbar>
-
-                {/*<Navbar fluid id='nav2'>
-                    <Navbar.Header>
-                        <Navbar.Toggle />
-                    </Navbar.Header>
-                    <Navbar.Collapse>
-                        <Nav pullLeft>
-                            <NavItem eventKey={1} href='/prank-all-videos'>
-                                <span className='separator'>PRANK CALL VIDEOS</span>
-                            </NavItem>
-                            <NavItem eventKey={2} href='/request-prank'>
-                                <span className='separator'>REQUEST A PRANK</span>
-                            </NavItem>
-                            <NavItem eventKey={3} href='/store'>
-                                <span className='separator'>STORE</span>
-                            </NavItem>
-                            <NavItem eventKey={4} href='/apps'>
-                                <span className='separator'>APPS</span>
-                            </NavItem>
-                            <NavItem eventKey={5} href='/blog'>
-                                <span className='separator'>BLOG</span>
-                            </NavItem>
-                        </Nav>
-                        <Navbar.Form pullRight>
-                            <FormGroup className='has-search'>
-                                <FormControl type='text' placeholder='Search' />
-                                <span className='fa fa-search form-control-feedback' />
-                            </FormGroup>
-                        </Navbar.Form>
-                    </Navbar.Collapse>
-                </Navbar>*/}
             </div>
         );
     }

@@ -1,12 +1,19 @@
 .funnest-container {
     border-bottom: 1px solid #eee;
     padding-bottom: 75px;
+    display: inline-block;
 
     h2 {
-        font-size: 57.333333333333336px;
+        font-size: 45.333333px;
         text-align: center;
         font-weight: bold;
         margin: 75px 0 25px 0;
+    }
+
+    p {
+        text-align: center;
+        color: #636363;
+        font-size: 30.333333px;
     }
 
     .card-send-prank {
@@ -25,5 +32,17 @@
         &:active {
             border-color: #237f11 !important;
         }
+    }
+
+    .carousel {
+        height: 477px;
+    }
+
+    .btn-check-out {
+        color: #1ab1af;
+        font-size: 30.333333px;
+        border: none;
+        display: block;
+        margin: 0 auto;
     }
 }

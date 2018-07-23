@@ -42,36 +42,8 @@ class Funnest extends React.Component {
 
         return (
             <div className='funnest-container'>
-                {/*<div className='prev-next-section'>
-                    <Button
-                        color='warning'
-                        className='btn-left-arrow'
-                        onClick={() => {
-
-                        }}>
-                    </Button>
-                    <Button
-                        color='warning'
-                        className='btn-right-arrow'
-                        onClick={() => {
-
-                        }}>
-                    </Button>
-                </div>
-                <div className='video-list-section'>
-                    {videoList}
-                </div>
-                <div className='clearfix' />
-                <div style={{ margin: '0 auto', width: '186px' }}>
-                    <Button
-                        color='warning'
-                        className='btn-check-out'
-                        onClick={() => {
-
-                        }}>
-                        Check out all our pranks!
-                    </Button>
-                </div>*/}
+                <h2>We Bring To You The Funniest Prank Call Scripts In The Planet!</h2>
+                <p>You ordered a pizza?</p>
                 <div className='carousel' ref={this.carousel}>
                     <div
                         className='slides'>
@@ -242,6 +214,10 @@ class Funnest extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='clearfix' />
+                <div>
+                    <Button color='link' className='btn-check-out'>Check out all our pranks!</Button>
                 </div>
             </div>
         );
