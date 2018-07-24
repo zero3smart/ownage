@@ -30,7 +30,7 @@ class HomePage extends React.Component {
     render() {
         const emailPlaceholder = (
             <div>
-                <i className="fa fa-envelope" aria-hidden="true">Email</i>
+                <i className='fa fa-envelope' aria-hidden='true'>Email</i>
             </div>
         );
 
@@ -41,8 +41,8 @@ class HomePage extends React.Component {
                 <React.Fragment key={i}>
                     <div className='each-char'>
                         {sCount.charAt(i)}
+                        {(sCount.length - i) % 3 === 1 && (i + 1) !== sCount.length ? <div className='comma'>,</div> : <div></div>}
                     </div>
-                    {(sCount.length - i) % 3 === 1 && (i + 1) !== sCount.length ? <div className='comma'>,</div> : <div></div>}
                 </React.Fragment>
             );
         }
@@ -94,7 +94,8 @@ class HomePage extends React.Component {
                         <h2>Subscribe To Ownage Pranks</h2>
                         <p>Don't miss out on the laughs, Exclusive updates, Discounts, Early video releases, and more!</p>
                         <FormGroup>
-                            <Input type='email' className='email' name='email' id='exampleEmail' placeholder='Email' />
+                            <Input type='email' className='email' name='email' id='exampleEmail' placeholder='Email' />                                
+                            <i className='fa fa-envelope' aria-hidden='true'></i>
                             <Button color='warning' className='btn-join'>Join The Fun</Button>
                         </FormGroup>
                         <div className='clearfix' />

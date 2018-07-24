@@ -142,9 +142,21 @@
                 font-size: 24.666667px;
             }
 
+            .form-group {
+                position: relative;
+
+                .fa {
+                    position: absolute;
+                    left: 8px;
+                    top: 14px;
+                    color: #636363;
+                }
+            }
+
             .email {
                 width: 61%;
                 height: 47px;
+                padding: 10px 20px 10px 30px;
                 float: left;
 
                 &::before {
@@ -170,6 +182,7 @@
                 margin-top: 20px;
 
                 .each-char {
+                    position: relative;
                     width: 54px;
                     height: 64px;
                     color: #fff;
@@ -178,15 +191,20 @@
                     margin-right: 10px;
                     font-weight: bold;
                     text-align: center;
+                    line-height: 78px;
+
+                    .comma {
+                        position: absolute;
+                        right: -10px;
+                        bottom: -20px;
+                        font-weight: bold;
+                        color: #fff;
+                        font-size: 40px;
+                        text-align: center;
+                    }
                 }
 
-                .comma {
-                    font-weight: bold;
-                    color: #fff;
-                    font-size: 40px;
-                    line-height: 76px;
-                    text-align: center;
-                }
+                
 
                 .description {
                     margin-left: 10px;
