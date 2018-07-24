@@ -1,3 +1,5 @@
+@import "../base/mixin";
+
 .home-container {
     #banner2 {
         position: relative;
@@ -5,12 +7,12 @@
         border-bottom: 1px solid #e5e5e5;
 
         img#header-banner2 {
-            width: 1328px;
+            width: $page-width;
         }
 
         a#apple-store-btn {
             position: absolute;
-            left: 585px;
+            left: 530px;
             top: 284px;
 
             img {
@@ -20,7 +22,7 @@
 
         a#google-play-btn {
             position: absolute;
-            left: 872px;
+            left: 814px;
             top: 284px;
 
             img {
@@ -31,7 +33,7 @@
 
     .request-a-prank-call {
         background: url('../../images/request-a-prank-call.png');
-        width: 1328px;
+        width: $page-width;
         height: 380px;
         margin: 75px 0;
 
@@ -46,7 +48,7 @@
         p {
             padding: 0 82px;
             color: #282828;
-            font-size: 29.666667px;
+            font-size: 25px;
         }
 
         .btn-submit-request {
@@ -72,7 +74,7 @@
         }
 
         img {
-            margin-left: 74px;
+            margin-left: 53px;
         }
 
         &::before {
@@ -278,12 +280,12 @@
             border-bottom: 1px solid #e5e5e5;
 
             img#header-banner2 {
-                width: 1328px;
+                width: $page-width;
             }
 
             a#apple-store-btn {
                 position: absolute;
-                left: 585px !important;
+                left: 530px !important;
                 top: 284px !important;
 
                 img {
@@ -293,7 +295,7 @@
 
             a#google-play-btn {
                 position: absolute;
-                left: 872px !important;
+                left: 814px !important;
                 top: 284px !important;
 
                 img {

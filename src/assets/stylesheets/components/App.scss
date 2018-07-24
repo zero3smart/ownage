@@ -42,7 +42,7 @@ h1 {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .main-container {
-        width: 1328px;
+        width: $page-width;
         margin: 0 auto;
     }
 }

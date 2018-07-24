@@ -24,7 +24,8 @@ import {
     FormGroup,
     Label,
     Input,
-    FormText
+    FormText,
+    Badge
 } from 'reactstrap';
 
 class NavigationBar extends React.Component {
@@ -33,7 +34,8 @@ class NavigationBar extends React.Component {
 
         this.toggle = this.toggle.bind(this);
         this.state = {
-            isOpen: false
+            isOpen: false,
+            cartCount: 4
         };
     }
 
@@ -47,6 +49,7 @@ class NavigationBar extends React.Component {
         const title = (
             <div className='title'>
                 <img src={headerCart} alt='Header Cart' width='15' />Cart
+                <Badge color='warning' className='cart-badge'>{this.state.cartCount}</Badge>
             </div>
         );
 

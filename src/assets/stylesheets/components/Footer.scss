@@ -10,6 +10,10 @@
         .logo-link {
             width: 472px;
 
+            img:not(:nth-child(1)) {
+                width: 200px;
+            }
+
             img:nth-child(2) {
                 margin-right: 8px;
             }

@@ -54,15 +54,17 @@
                 color: #fff;
                 position: relative;
 
-                &::after {
-                    content: '0';
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    border-radius: 50%;
-                    width: 10px;
-                    height: 10px;
+                .cart-badge {
                     background: #ffa500;
+                    border-radius: 50%;
+                    color: #fff;
+                    width: 15px;
+                    height: 15px;
+                    padding: 3px;
+                    position: absolute;
+                    top: -6px;
+                    left: 15px;
+                    font-size: 63%;
                 }
 
                 img {
@@ -101,7 +103,7 @@
                 font-size: 20px;
                 color: #636363;
                 font-weight: bold;
-                margin-right: 75px;
+                margin-right: 70px;
 
                 &:first-child {
                     padding-left: 0;

@@ -1,7 +1,9 @@
+@import "../base/mixin";
+
 .header-container {
     #banner1 {
         img {
-            width: 1328px;
+            width: $page-width;
         }
     }
 }
@@ -44,7 +46,7 @@
     .header-container {
         #banner1 {
             img {
-                width: 1328px;
+                width: $page-width;
             }
         }
     }

@@ -121,7 +121,7 @@ class Funnest extends React.Component {
 
                         <div
                             className='slideItem'
-                            style={{width: '382px', height: '231px', top: '54px', padding: '10px', right: '886.4px', opacity: 0.5, zIndex: 4, display: 'block'}}>
+                            style={{width: '382px', height: '231px', top: '54px', padding: '10px', right: '786.4px', opacity: 0.5, zIndex: 4, display: 'block'}}>
                             <a href='#'>
                                 <img src='images/planet1.png' style={{width: '362px', height: '211px', display: 'inline-block'}} />
                             </a>
@@ -145,7 +145,7 @@ class Funnest extends React.Component {
 
                         <div
                             className='slideItem'
-                            style={{width: '387px', height: '298px', top: '30px', right: '742px', padding: '10px', opacity: 0.7, zIndex: 5, display: 'block'}}>
+                            style={{width: '387px', height: '298px', top: '30px', right: '685px', padding: '10px', opacity: 0.7, zIndex: 5, display: 'block'}}>
                             <img src='images/planet1.png' style={{width: '367px', height: '263px', display: 'inline-block'}} />
                             <div
                                 className='shadow'
@@ -167,7 +167,7 @@ class Funnest extends React.Component {
 
                         <div
                             className='slideItem'
-                            style={{width: '502px', height: '440px', padding: '10px', top: '0px', right: '417px', opacity: 1, zIndex: 6, display: 'block'}}>
+                            style={{width: '502px', height: '440px', padding: '10px', top: '0px', right: '360px', opacity: 1, zIndex: 6, display: 'block'}}>
                             <a href='#'>
                                 <img src='images/planet1.png' style={{width: '482px', height: '339px', display: 'inline-block'}} />
                             </a>
@@ -194,7 +194,7 @@ class Funnest extends React.Component {
 
                         <div
                             className='slideItem'
-                            style={{width: '387px', height: '298px', padding: '10px', top: '30px', right: '137px', opacity: 0.7, zIndex: 5, display: 'block'}}>
+                            style={{width: '387px', height: '298px', padding: '10px', top: '30px', right: '147px', opacity: 0.7, zIndex: 5, display: 'block'}}>
                             <img src='images/planet1.png' style={{width: '367px', height: '278px', display: 'inline-block'}} />
                             <div
                                 className='shadow'

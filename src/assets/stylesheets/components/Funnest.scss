@@ -1,7 +1,13 @@
+@import "../base/mixin";
+
 .funnest-container {
     border-bottom: 1px solid #eee;
     padding-bottom: 75px;
     display: inline-block;
+
+    .carousel {
+        width: $page-width !important;
+    }
 
     h2 {
         font-size: 45.333333px;
