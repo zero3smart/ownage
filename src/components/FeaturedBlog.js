@@ -11,7 +11,7 @@ class FeaturedBlog extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rowCount: 1
+            rowIndex: 1
         };
     }
 
@@ -24,9 +24,9 @@ class FeaturedBlog extends React.Component {
             marginRight: 0
         };
 
-        const { rowCount } = this.state;
+        const { rowIndex } = this.state;
 
-        const shownBlogs = rowCount * 2 <= blog.blogs.length ? blog.blogs.slice(0, rowCount * 2) : blog.blogs;
+        const shownBlogs = rowIndex * 2 <= blog.blogs.length ? blog.blogs.slice(0, rowIndex * 2) : blog.blogs;
 
         const blogList = shownBlogs.map((blog, index) => (
             <div className='card' key={blog.id} style={(index + 1) % 2 == 0 ? style : {}}>
@@ -53,8 +53,8 @@ class FeaturedBlog extends React.Component {
                             color='warning'
                             className='btn-view-more'
                             onClick={() => {
-                                if (rowCount <= blog.blogs.length / 2)
-                                    this.setState({ rowCount: rowCount + 1 });
+                                if (rowIndex <= blog.blogs.length / 2)
+                                    this.setState({ rowIndex: rowIndex + 1 });
                             }}>
                             View More
                         </Button>
