@@ -11,18 +11,41 @@ class LatestVideo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rowCount: 1
+            rowIndex: 1,
+            reelContainerWidth: 1200
         };
     }
 
-    componentDidMount() {
+    updateDimensions() {
+        const reelContainerWidth = window.innerWidth;
 
+        this.setState({ reelContainerWidth: reelContainerWidth });
+    }
+
+    componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener('resize', this.updateDimensions.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions.bind(this));
     }
 
     render() {
-        const { rowCount } = this.state;
+        const { rowIndex } = this.state;
 
-        const shownVideos = rowCount * 3 <= video.videos.length ? video.videos.slice(0, rowCount * 3) : video.videos;
+        let rowCount = 3;
+
+        if (this.state.reelContainerWidth >= 1200)
+            rowCount = 3;
+        else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199)
+            rowCount = 2;
+        else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991)
+            rowCount = 2;
+        else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767)
+            rowCount = 1;
+
+        const shownVideos = rowIndex * rowCount <= video.videos.length ? video.videos.slice(0, rowIndex * rowCount) : video.videos;
 
         const videoList = shownVideos.map((video, index) => (
             <div className='card' key={video.id}>
@@ -53,8 +76,8 @@ class LatestVideo extends React.Component {
                             color='warning'
                             className='btn-view-more'
                             onClick={() => {
-                                if (rowCount <= video.videos.length / 3)
-                                    this.setState({ rowCount: rowCount + 1 });
+                                if (rowIndex <= video.videos.length / 3)
+                                    this.setState({ rowIndex: rowIndex + 1 });
                             }}>
                             View More
                         </Button>

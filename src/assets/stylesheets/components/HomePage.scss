@@ -228,6 +228,14 @@
                 width: 576px;
             }
         }
+
+        .request-a-prank-call {
+            width: 576px;
+
+            p {
+                font-size: 18px;
+            }
+        }
     }
 }
 
@@ -257,6 +265,14 @@
                 }
             }
         }
+
+        .request-a-prank-call {
+            width: 768px;
+
+            p {
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -284,6 +300,14 @@
                 img {
                     width: 166px !important;
                 }
+            }
+        }
+
+        .request-a-prank-call {
+            width: 992px;
+
+            p {
+                font-size: 22px;
             }
         }
     }
@@ -320,6 +344,10 @@
                     width: 266px !important;
                 }
             }
+        }
+
+        .request-a-prank-call {
+            width: $page-width;
         }
     }
 }

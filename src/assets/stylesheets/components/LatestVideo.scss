@@ -79,10 +79,6 @@
     .latest-video-container {
         .card {
             width: 100%;
-
-            &:nth-child(2n+2) {
-                margin-right: 0;
-            }
         }
     }
 }
