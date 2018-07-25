@@ -20,21 +20,17 @@ class FeaturedBlog extends React.Component {
     }
 
     render() {
-        const style = {
-            marginRight: 0
-        };
-
         const { rowIndex } = this.state;
 
         const shownBlogs = rowIndex * 2 <= blog.blogs.length ? blog.blogs.slice(0, rowIndex * 2) : blog.blogs;
 
         const blogList = shownBlogs.map((blog, index) => (
-            <div className='card' key={blog.id} style={(index + 1) % 2 == 0 ? style : {}}>
+            <div className='card' key={blog.id}>
                 <img className='card-img-top' src={blog.imageSrc} alt='Blog' />
                 <div className='card-body'>
                     <h3 className='card-title'>{blog.title}</h3>
                     <p className='card-text date'>
-                        <i className="fa fa-calendar" aria-hidden="true" />
+                        <i className='fa fa-calendar' aria-hidden='true' />
                         <small className='text-muted'>{blog.date}</small>
                     </p>
                     <p className='card-text description'>{blog.description}</p>

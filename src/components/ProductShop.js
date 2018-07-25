@@ -11,25 +11,46 @@ class ProductShop extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            viewAll: false
+            viewAll: false,
+            reelContainerWidth: 1200
         };
+    }
+
+    updateDimensions() {
+        const reelContainerWidth = window.innerWidth;
+
+        this.setState({
+            reelContainerWidth: reelContainerWidth
+        });
     }
 
     componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener('resize', this.updateDimensions.bind(this));
+    }
 
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions.bind(this));
     }
 
     render() {
-        const style = {
-            marginRight: 0
-        };
-
         const { viewAll } = this.state;
 
-        const shownProducts = viewAll ? product.products : product.products.slice(0, 4);
+        let rowCount = 4;
+
+        if (this.state.reelContainerWidth >= 1200)
+            rowCount = 4;
+        else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199)
+            rowCount = 3;
+        else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991)
+            rowCount = 2;
+        else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767)
+            rowCount = 1;
+
+        const shownProducts = viewAll ? product.products : product.products.slice(0, rowCount);
 
         const productList = shownProducts.map((product, index) => (
-            <div className='card' key={product.id} style={(index + 1) % 4 == 0 ? style : {}}>
+            <div className='card' key={product.id}>
                 <img className='card-img-top' src={product.imageSrc} alt='Product' />
                 <div className='card-body'>
                     <h3 className='card-title'>{product.title}</h3>
@@ -43,7 +64,7 @@ class ProductShop extends React.Component {
 
         return (
             <div className='product-shop-container'>
-                <h2>Shope With Us</h2>
+                <h2>Shop With Us</h2>
                 <div className=''>
                     {productList}
                     <div className='clearfix' />

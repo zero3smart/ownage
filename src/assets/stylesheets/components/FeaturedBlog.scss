@@ -74,6 +74,10 @@
     .featured-blog-container {
         .card {
             margin-right: 30px;
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -83,11 +87,21 @@
     .featured-blog-container {
         .card {
             margin-right: 38px;
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
         }
     }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    .featured-blog-container {
+        .card {
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+    }
 }
