@@ -20,16 +20,12 @@ class LatestVideo extends React.Component {
     }
 
     render() {
-        const style = {
-            marginRight: 0
-        };
-
         const { rowCount } = this.state;
 
         const shownVideos = rowCount * 3 <= video.videos.length ? video.videos.slice(0, rowCount * 3) : video.videos;
 
         const videoList = shownVideos.map((video, index) => (
-            <div className='card' key={video.id} style={(index+1) % 3 == 0 ? style : {}}>
+            <div className='card' key={video.id}>
                 <img className='card-img-top' src={video.imageSrc} alt='Video' />
                 <div className='card-body'>
                     <h3 className='card-title'>{video.title}</h3>
