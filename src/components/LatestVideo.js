@@ -36,14 +36,15 @@ class LatestVideo extends React.Component {
 
         let rowCount = 3;
 
-        if (this.state.reelContainerWidth >= 1200)
+        if (this.state.reelContainerWidth >= 1200) {
             rowCount = 3;
-        else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199)
+        } else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199) {
             rowCount = 2;
-        else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991)
+        } else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991) {
             rowCount = 2;
-        else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767)
+        } else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767) {
             rowCount = 1;
+        }
 
         const shownVideos = rowIndex * rowCount <= video.videos.length ? video.videos.slice(0, rowIndex * rowCount) : video.videos;
 

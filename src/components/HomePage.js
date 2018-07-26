@@ -81,7 +81,7 @@ class HomePage extends React.Component {
                 <Gags />
                 <div className='brand-section'>
                     <p>As Featured In...</p>
-                    <div style={{display: 'flex', paddingBottom: '117px', paddingTop: '17px'}}>
+                    <div style={{display: 'flex', flexWrap: 'wrap', paddingBottom: '117px', paddingTop: '17px'}}>
                         <img src={mashable} />
                         <img src={forbes} />
                         <img src={huffpost} />
@@ -94,7 +94,7 @@ class HomePage extends React.Component {
                         <h2>Subscribe To Ownage Pranks</h2>
                         <p>Don't miss out on the laughs, Exclusive updates, Discounts, Early video releases, and more!</p>
                         <FormGroup>
-                            <Input type='email' className='email' name='email' id='exampleEmail' placeholder='Email' />                                
+                            <Input type='email' className='email' name='email' id='exampleEmail' placeholder='Email' />
                             <i className='fa fa-envelope' aria-hidden='true'></i>
                             <Button color='warning' className='btn-join'>Join The Fun</Button>
                         </FormGroup>

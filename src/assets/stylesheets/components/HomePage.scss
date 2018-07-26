@@ -75,6 +75,7 @@
 
         img {
             margin-left: 53px;
+            margin-bottom: 20px;
         }
 
         &::before {
@@ -204,8 +205,6 @@
                     }
                 }
 
-
-
                 .description {
                     margin-left: 10px;
 
@@ -236,8 +235,56 @@
                 font-size: 18px;
             }
         }
+
+        .subscribe-section {
+            padding: 51px 20px 0;
+            height: 778px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 100px;
+                top: 430px;
+                background: url('../../images/subscribe-logo.png');
+                width: 375px;
+                height: 422px;
+                background-size: 100%;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                width: 500px;
+                height: 500px;
+                left: 36px;
+                top: 327px;
+                background: #2fdbd9;
+                z-index: -30;
+            }
+
+            .subscribe-section__body {
+                padding: 0;
+                h2 {
+                    text-align: center;
+                }
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
@@ -271,6 +318,55 @@
 
             p {
                 font-size: 20px;
+            }
+        }
+
+        .subscribe-section {
+            padding: 51px 20px 0;
+            height: 954px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 100px;
+                top: 424px;
+                background: url('../../images/subscribe-logo.png');
+                width: 575px;
+                height: 650px;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                width: 607px;
+                height: 607px;
+                left: 91px;
+                top: 414px;
+                background: #2fdbd9;
+                z-index: -30;
+            }
+
+            .subscribe-section__body {
+                padding: 0;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
             }
         }
     }
@@ -308,6 +404,23 @@
 
             p {
                 font-size: 22px;
+            }
+        }
+
+        .subscribe-section {
+            .subscribe-section__body{
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
             }
         }
     }
@@ -348,6 +461,90 @@
 
         .request-a-prank-call {
             width: $page-width;
+        }
+
+        .subscribe-section {
+            position: relative;
+            background: #2fdbd9;
+            height: 481px;
+            z-index: 2;
+            .subscribe-section__body {
+                padding-left: 488px;
+                padding-top: 94px;
+                z-index: 1;
+                h2 {
+                    color: #fff;
+                    font-size: 39.333333px;
+                }
+                p {
+                    color: #fff;
+                    font-size: 24.666667px;
+                }
+                .form-group {
+                    position: relative;
+                    .fa {
+                        position: absolute;
+                        left: 8px;
+                        top: 14px;
+                        color: #636363;
+                    }
+                }
+                .email {
+                    width: 61%;
+                    height: 47px;
+                    padding: 10px 20px 10px 30px;
+                    float: left;
+                    &::before {
+                        font-family: 'Font Awesome';
+                        content: "\f003";
+                        display: inline-block;
+                        padding-left: 6px;
+                        vertical-align: middle;
+                    }
+                }
+                .btn-join {
+                    height: 47px;
+                    color: #fff;
+                    width: 145px;
+                    font-size: 20px;
+                    float: left;
+                    margin-left: 10px;
+                }
+                .num-block {
+                    display: flex;
+                    margin-top: 20px;
+
+                    .each-char {
+                        position: relative;
+                        width: 54px;
+                        height: 64px;
+                        color: #fff;
+                        font-size: 40px;
+                        background: #24b7b5;
+                        margin-right: 10px;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 78px;
+                        .comma {
+                            position: absolute;
+                            right: -10px;
+                            bottom: -20px;
+                            font-weight: bold;
+                            color: #fff;
+                            font-size: 40px;
+                            text-align: center;
+                        }
+                    }
+                    .description {
+                        margin-left: 10px;
+                        p {
+                            color: #fff;
+                            font-size: 22px;
+                            width: 320px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

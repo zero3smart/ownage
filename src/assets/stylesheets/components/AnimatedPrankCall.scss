@@ -16,6 +16,10 @@
         margin-right: 42px;
         margin-bottom: 20px;
 
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
         .card-title {
             color: #282828;
             font-size: 30.666666666666668px;
@@ -71,4 +75,38 @@
         font-size: 29.333333333333332px;
         padding: 16px 12px;
     }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .animated-prank-call-container {
+        .card {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .animated-prank-call-container {
+        .card {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .animated-prank-call-container {
+        .card {
+            margin-right: 34px;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

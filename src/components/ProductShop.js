@@ -38,14 +38,15 @@ class ProductShop extends React.Component {
 
         let rowCount = 4;
 
-        if (this.state.reelContainerWidth >= 1200)
+        if (this.state.reelContainerWidth >= 1200) {
             rowCount = 4;
-        else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199)
+        } else if (this.state.reelContainerWidth >= 992 && this.state.reelContainerWidth <= 1199) {
             rowCount = 3;
-        else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991)
+        } else if (this.state.reelContainerWidth >= 768 && this.state.reelContainerWidth <= 991) {
             rowCount = 2;
-        else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767)
+        } else if (this.state.reelContainerWidth >= 576 && this.state.reelContainerWidth <= 767) {
             rowCount = 1;
+        }
 
         const shownProducts = viewAll ? product.products : product.products.slice(0, rowCount);
 
