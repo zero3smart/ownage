@@ -64,27 +64,97 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
     .footer-container {
+        .top-links {
+            flex-wrap: wrap;
 
+            .logo-link {
+                margin: 0 auto;
+
+                img:nth-child(1),
+                img:nth-child(2),
+                img:nth-child(3) {
+                    display: block;
+                    margin-bottom: 10px;
+                    margin: 10px auto;
+                }
+            }
+
+            .navigation {
+                margin: 0 auto;
+
+                &.hidden-sm {
+                    display: none;
+                }
+            }
+
+            .social-link {
+                margin: 0 auto;
+                width: auto;
+            }
+        }
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
     .footer-container {
+        .top-links {
+            flex-wrap: wrap;
 
+            .logo-link {
+                margin: 0 auto;
+            }
+
+            .navigation {
+                margin: 0 auto;
+
+                &.hidden-md {
+                    display: none;
+                }
+            }
+
+            .social-link {
+                margin: 0 auto;
+                width: auto;
+            }
+        }
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
     .footer-container {
+        .top-links {
+            flex-wrap: wrap;
 
+            .logo-link {
+                margin: 0 auto;
+            }
+
+            .navigation {
+                margin: 0 auto;
+
+                &.hidden-lg {
+                    display: none;
+                }
+            }
+
+            .social-link {
+                margin: 0 auto;
+            }
+        }
     }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .footer-container {
-
+        .top-links {
+            .navigation {
+                &.hidden-xl {
+                    display: none;
+                }
+            }
+        }
     }
 }

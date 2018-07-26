@@ -8,15 +8,14 @@ import facebook from '../assets/images/facebook.png';
 import twitter from '../assets/images/twitter.png';
 import camera from '../assets/images/camera.png';
 import '../assets/stylesheets/components/Footer.scss';
-import { NavLink } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
+import { NavLink, Row, Col, Container } from 'reactstrap';
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             subscribersCount: 4663605
-        }
+        };
     }
 
     render() {
@@ -28,7 +27,7 @@ class Footer extends React.Component {
                         <img src={appStoreBtn} />
                         <img src={googlePlayBtn} />
                     </div>
-                    <div className='navigation'>
+                    <div className='navigation hidden-sm'>
                         <Row>
                             <Col>
                                 <NavLink href='#'>Prank Calling App</NavLink>
@@ -41,9 +40,27 @@ class Footer extends React.Component {
                                 <NavLink href='#'>Soundboard</NavLink>
                             </Col>
                             <Col>
-                                <NavLink href="#">About</NavLink>
-                                <NavLink href="#">Contact</NavLink>
-                                <NavLink href="#">Hire me</NavLink>
+                                <NavLink href='#'>About</NavLink>
+                                <NavLink href='#'>Contact</NavLink>
+                                <NavLink href='#'>Hire me</NavLink>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className='navigation hidden-lg hidden-md'>
+                        <Row>
+                            <Col>
+                                <NavLink href='#'>Prank Calling App</NavLink>
+                                <NavLink href='#'>Request A Prank</NavLink>
+                                <NavLink href='#'>Store</NavLink>
+                                <NavLink href='#'>Videos</NavLink>
+                                <NavLink href='#'>Blog</NavLink>
+                            </Col>
+                            <Col>
+                                <NavLink href='#'>Soundboard</NavLink>
+                                <NavLink href='#'>About</NavLink>
+                                <NavLink href='#'>Contact</NavLink>
+                                <NavLink href='#'>Hire me</NavLink>
+                                <NavLink href='#'>Block Number</NavLink>
                             </Col>
                         </Row>
                     </div>
