@@ -78,12 +78,21 @@ class Footer extends React.Component {
                     </div>
                 </div>
                 <div className='bottom-links'>
-                    <ul>
-                        <li>© 2018 <span style={{color: '#ffa500'}}>Ownage Pranks.</span> All rights reserved</li>
+                    <ul className='hidden-sm'>
+                        <li>© 2018 <span style={{ color: '#ffa500' }}>Ownage Pranks.</span> All rights reserved</li>
                         <li><NavLink href='#'>Privacy</NavLink></li>
                         <li><NavLink href='#'>Block Number</NavLink></li>
                         <li><NavLink href='#'>Terms and Conditions</NavLink></li>
                         <li><NavLink href='#'>Site Map</NavLink></li>
+                    </ul>
+                    <ul className='hidden-lg hidden-md'>
+                        <li style={{ display: 'block' }}>© 2018 <span style={{ color: '#ffa500' }}>Ownage Pranks.</span></li>
+                        <li style={{ display: 'block' }}>All rights reserved</li>
+                        <li style={{ display: 'block' }}><NavLink href='#'>Privacy</NavLink></li>
+                        <li style={{ display: 'block' }}>
+                            <NavLink href='#'>Terms and Conditions</NavLink>
+                            <NavLink href='#'>Site Map</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>
